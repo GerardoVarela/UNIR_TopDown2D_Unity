@@ -1,0 +1,84 @@
+# ================
+# UNITY 6 GITIGNORE
+# ================
+
+# --- Unity Generated Folders ---
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+[Mm]emoryCaptures/
+[Uu]serSettings/
+
+# Newer Unity cache folders
+/[Aa]rtifacts/
+/[Bb]urstCache/
+/[Pp]ackages/com.unity.addressables/Build/
+/[Pp]ackages/com.unity.addressables/Cache/
+
+# Rider / VSCode / JetBrains
+.vscode/
+.idea/
+*.csproj
+*.unityproj
+*.sln
+*.suo
+*.tmp
+*.user
+*.userprefs
+
+# Generated files
+*.pidb
+*.svd
+*.pdb
+*.mdb
+
+# Unity crash reports
+sysinfo.txt
+
+# Addressables groups backup
+/[Aa]ssets/[Aa]ddressable[Aa]ssetsData/*/*.bin*
+/[Aa]ssets/[Aa]ddressable[Aa]ssetsData/*/*.hash
+
+# Auto-generated Lighting & GI
+/[Aa]ssets/**/Lightmap*/
+[Ll]ightmapSnapshot.asset
+/[Aa]ssets/*/LightingData.asset
+
+# Auto-generated StreamingAssets/cache
+/[Aa]ssets/[Ss]treamingAssets/aa/*
+
+# Android / iOS Builds
+*.apk
+*.aab
+*.ipa
+.gradle/
+local.properties
+*.keystore
+
+# Windows / Mac / Linux binary builds
+*.exe
+*.app
+*.x86
+*.x86_64
+
+# TextMeshPro auto-generated files
+[Aa]ssets/TextMesh Pro/*/Resources/
+
+# ================
+# GIT LFS SUGGESTION
+# ================
+# Put heavy binary assets under LFS
+*.png filter=lfs diff=lfs merge=lfs
+*.jpg filter=lfs diff=lfs merge=lfs
+*.jpeg filter=lfs diff=lfs merge=lfs
+*.psd filter=lfs diff=lfs merge=lfs
+*.tga filter=lfs diff=lfs merge=lfs
+*.fbx filter=lfs diff=lfs merge=lfs
+*.anim filter=lfs diff=lfs merge=lfs
+*.controller filter=lfs diff=lfs merge=lfs
+*.mp4 filter=lfs diff=lfs merge=lfs
+*.wav filter=lfs diff=lfs merge=lfs
+*.ogg filter=lfs diff=lfs merge=lfs
