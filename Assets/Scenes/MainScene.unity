@@ -181,6 +181,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerCharacter
   linearSpeed: 4
   move: {fileID: 763525692}
+  punch: {fileID: 807459521}
+  punchRadius: 0.3
+  punchRange: 1
 --- !u!212 &187235352
 SpriteRenderer:
   serializedVersion: 2
@@ -226,8 +229,8 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 510124843
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Sprite: {fileID: 9128384846270689552, guid: b954565052ed7a44cb7676701c2c7a59, type: 3}
@@ -249,7 +252,7 @@ Transform:
   m_GameObject: {fileID: 187235349}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.8832, y: -0.78602, z: 0}
+  m_LocalPosition: {x: 1.53, y: -0.78602, z: 0}
   m_LocalScale: {x: 7.4721346, y: 7.4721346, z: 7.4721346}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -289,8 +292,8 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.011545958, y: -0.005772995}
-  m_Size: {x: 0.18690808, y: 0.354227}
+  m_Offset: {x: 0.011545958, y: -0.055875987}
+  m_Size: {x: 0.18690808, y: 0.25402096}
   m_Direction: 0
 --- !u!95 &187235355
 Animator:
@@ -395,8 +398,8 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 510124843
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Sprite: {fileID: -6117319016296711954, guid: b65a75edec31ead41acb004b1e63e1ff, type: 3}
@@ -418,7 +421,7 @@ Transform:
   m_GameObject: {fileID: 297833029}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.87, y: 2.29, z: 0}
+  m_LocalPosition: {x: -3.87, y: -0.62, z: 0}
   m_LocalScale: {x: 7.7459183, y: 7.7459183, z: 7.7459183}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -485,8 +488,8 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.0069611664, y: 0.03898262}
-  m_Size: {x: 0.2902676, y: 0.3320347}
+  m_Offset: {x: 0, y: 0.01809906}
+  m_Size: {x: 0.2902676, y: 0.2902676}
   m_Direction: 0
 --- !u!114 &297833035
 MonoBehaviour:
@@ -511,7 +514,7 @@ Animator:
   m_GameObject: {fileID: 297833029}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: eec65ae548ea6744bade8bec57730d70, type: 2}
+  m_Controller: {fileID: 22100000, guid: 96df9cd542c56ae42b801dc03f8fac03, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -537,6 +540,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: Unity.InputSystem::UnityEngine.InputSystem.InputActionReference
   m_Asset: {fileID: -944628639613478452, guid: ea35775851d88804ba95a9c1c07fc06a, type: 3}
   m_ActionId: 351f2ccd-1f9f-44bf-9bec-d62ac5c5f408
+--- !u!114 &807459521
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc1515ab76e54f068e2f2207940fab32, type: 3}
+  m_Name: Player/Attack
+  m_EditorClassIdentifier: Unity.InputSystem::UnityEngine.InputSystem.InputActionReference
+  m_Asset: {fileID: -944628639613478452, guid: ea35775851d88804ba95a9c1c07fc06a, type: 3}
+  m_ActionId: 6c2ab1b8-8984-453a-af3d-a3c78ae1679a
 --- !u!1 &1093622962
 GameObject:
   m_ObjectHideFlags: 0
@@ -574,7 +591,7 @@ MonoBehaviour:
   m_Intensity: 1
   m_LightVolumeIntensity: 1
   m_LightVolumeEnabled: 0
-  m_ApplyToSortingLayers: 00000000
+  m_ApplyToSortingLayers: 0000000097184a792be3671ecfcb60eb
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
   m_LightOrder: 0
