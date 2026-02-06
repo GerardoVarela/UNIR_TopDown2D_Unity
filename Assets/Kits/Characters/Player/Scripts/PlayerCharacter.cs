@@ -12,9 +12,11 @@ public class PlayerCharacter : BaseCharacter
     [SerializeField] float punchRadius = 0.3f;
     [SerializeField] float punchRange = 1f;
 
+    Life life;
     protected override void Awake()
     {
         base.Awake();
+        life = GetComponent<Life>();
     }
 
     private void OnEnable()
@@ -41,7 +43,15 @@ public class PlayerCharacter : BaseCharacter
             PerformPunch();
         }
     }
-
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        Drop drop = other.GetComponent<Drop>();
+        if (drop)
+        {
+            life.RecoverHealth(drop.dropDefinition.healthRecovery);
+            drop.NotifyPickedUp();
+        }
+    }
     Vector2 punchDirection = Vector2.down;
     private void PerformPunch()
     {
