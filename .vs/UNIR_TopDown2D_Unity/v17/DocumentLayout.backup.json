@@ -1,0 +1,200 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\andre\\Documents\\Github\\UNIR_TopDown2D_Unity\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{89365940-D66E-BC46-FB91-8122C668C549}|Assembly-CSharp.csproj|C:\\Users\\andre\\Documents\\Github\\UNIR_TopDown2D_Unity\\assets\\kits\\characters\\enemies\\!common\\scripts\\basevampire.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{89365940-D66E-BC46-FB91-8122C668C549}|Assembly-CSharp.csproj|solutionrelative:assets\\kits\\characters\\enemies\\!common\\scripts\\basevampire.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{89365940-D66E-BC46-FB91-8122C668C549}|Assembly-CSharp.csproj|C:\\Users\\andre\\Documents\\Github\\UNIR_TopDown2D_Unity\\assets\\kits\\gameplayobjects\\drops\\scripts\\drop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{89365940-D66E-BC46-FB91-8122C668C549}|Assembly-CSharp.csproj|solutionrelative:assets\\kits\\gameplayobjects\\drops\\scripts\\drop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{89365940-D66E-BC46-FB91-8122C668C549}|Assembly-CSharp.csproj|C:\\Users\\andre\\Documents\\Github\\UNIR_TopDown2D_Unity\\assets\\kits\\characters\\player\\scripts\\playercharacter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{89365940-D66E-BC46-FB91-8122C668C549}|Assembly-CSharp.csproj|solutionrelative:assets\\kits\\characters\\player\\scripts\\playercharacter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{89365940-D66E-BC46-FB91-8122C668C549}|Assembly-CSharp.csproj|c:\\users\\andre\\documents\\github\\unir_topdown2d_unity\\assets\\kits\\lifesystem\\scripts\\life.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{89365940-D66E-BC46-FB91-8122C668C549}|Assembly-CSharp.csproj|solutionrelative:assets\\kits\\lifesystem\\scripts\\life.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{89365940-D66E-BC46-FB91-8122C668C549}|Assembly-CSharp.csproj|c:\\users\\andre\\documents\\github\\unir_topdown2d_unity\\assets\\kits\\lifesystem\\scripts\\lifebar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{89365940-D66E-BC46-FB91-8122C668C549}|Assembly-CSharp.csproj|solutionrelative:assets\\kits\\lifesystem\\scripts\\lifebar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{89365940-D66E-BC46-FB91-8122C668C549}|Assembly-CSharp.csproj|C:\\Users\\andre\\Documents\\Github\\UNIR_TopDown2D_Unity\\assets\\kits\\gameplayobjects\\drops\\scripts\\dropdefinition.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{89365940-D66E-BC46-FB91-8122C668C549}|Assembly-CSharp.csproj|solutionrelative:assets\\kits\\gameplayobjects\\drops\\scripts\\dropdefinition.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{89365940-D66E-BC46-FB91-8122C668C549}|Assembly-CSharp.csproj|C:\\Users\\andre\\Documents\\Github\\UNIR_TopDown2D_Unity\\assets\\kits\\sensessystem\\scripts\\sight2d.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{89365940-D66E-BC46-FB91-8122C668C549}|Assembly-CSharp.csproj|solutionrelative:assets\\kits\\sensessystem\\scripts\\sight2d.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{89365940-D66E-BC46-FB91-8122C668C549}|Assembly-CSharp.csproj|C:\\Users\\andre\\Documents\\Github\\UNIR_TopDown2D_Unity\\assets\\kits\\gameplayobjects\\coins\\scripts\\coin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{89365940-D66E-BC46-FB91-8122C668C549}|Assembly-CSharp.csproj|solutionrelative:assets\\kits\\gameplayobjects\\coins\\scripts\\coin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{89365940-D66E-BC46-FB91-8122C668C549}|Assembly-CSharp.csproj|C:\\Users\\andre\\Documents\\Github\\UNIR_TopDown2D_Unity\\assets\\kits\\characters\\!common\\scripts\\basecharacter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{89365940-D66E-BC46-FB91-8122C668C549}|Assembly-CSharp.csproj|solutionrelative:assets\\kits\\characters\\!common\\scripts\\basecharacter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{89365940-D66E-BC46-FB91-8122C668C549}|Assembly-CSharp.csproj|C:\\Users\\andre\\Documents\\Github\\UNIR_TopDown2D_Unity\\assets\\kits\\sensessystem\\scripts\\ivisible2d.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{89365940-D66E-BC46-FB91-8122C668C549}|Assembly-CSharp.csproj|solutionrelative:assets\\kits\\sensessystem\\scripts\\ivisible2d.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\andre\\Documents\\Github\\UNIR_TopDown2D_Unity\\Assets\\Kits\\GameplayObjects\\Drops\\DropDefinition.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Kits\\GameplayObjects\\Drops\\DropDefinition.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 8,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "LifeBar.cs",
+              "DocumentMoniker": "C:\\Users\\andre\\Documents\\Github\\UNIR_TopDown2D_Unity\\Assets\\Kits\\LifeSystem\\Scripts\\LifeBar.cs",
+              "RelativeDocumentMoniker": "Assets\\Kits\\LifeSystem\\Scripts\\LifeBar.cs",
+              "ToolTip": "C:\\Users\\andre\\Documents\\Github\\UNIR_TopDown2D_Unity\\Assets\\Kits\\LifeSystem\\Scripts\\LifeBar.cs",
+              "RelativeToolTip": "Assets\\Kits\\LifeSystem\\Scripts\\LifeBar.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-06T18:14:11.18Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Life.cs",
+              "DocumentMoniker": "C:\\Users\\andre\\Documents\\Github\\UNIR_TopDown2D_Unity\\Assets\\Kits\\LifeSystem\\Scripts\\Life.cs",
+              "RelativeDocumentMoniker": "Assets\\Kits\\LifeSystem\\Scripts\\Life.cs",
+              "ToolTip": "C:\\Users\\andre\\Documents\\Github\\UNIR_TopDown2D_Unity\\Assets\\Kits\\LifeSystem\\Scripts\\Life.cs",
+              "RelativeToolTip": "Assets\\Kits\\LifeSystem\\Scripts\\Life.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAIwCwAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-06T17:51:56.484Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Drop.cs",
+              "DocumentMoniker": "C:\\Users\\andre\\Documents\\Github\\UNIR_TopDown2D_Unity\\Assets\\Kits\\GameplayObjects\\Drops\\Scripts\\Drop.cs",
+              "RelativeDocumentMoniker": "Assets\\Kits\\GameplayObjects\\Drops\\Scripts\\Drop.cs",
+              "ToolTip": "C:\\Users\\andre\\Documents\\Github\\UNIR_TopDown2D_Unity\\Assets\\Kits\\GameplayObjects\\Drops\\Scripts\\Drop.cs",
+              "RelativeToolTip": "Assets\\Kits\\GameplayObjects\\Drops\\Scripts\\Drop.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAoAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-06T17:33:07.549Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "DropDefinition.cs",
+              "DocumentMoniker": "C:\\Users\\andre\\Documents\\Github\\UNIR_TopDown2D_Unity\\Assets\\Kits\\GameplayObjects\\Drops\\Scripts\\DropDefinition.cs",
+              "RelativeDocumentMoniker": "Assets\\Kits\\GameplayObjects\\Drops\\Scripts\\DropDefinition.cs",
+              "ToolTip": "C:\\Users\\andre\\Documents\\Github\\UNIR_TopDown2D_Unity\\Assets\\Kits\\GameplayObjects\\Drops\\Scripts\\DropDefinition.cs",
+              "RelativeToolTip": "Assets\\Kits\\GameplayObjects\\Drops\\Scripts\\DropDefinition.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-06T17:28:50.321Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Sight2D.cs",
+              "DocumentMoniker": "C:\\Users\\andre\\Documents\\Github\\UNIR_TopDown2D_Unity\\Assets\\Kits\\SensesSystem\\Scripts\\Sight2D.cs",
+              "RelativeDocumentMoniker": "Assets\\Kits\\SensesSystem\\Scripts\\Sight2D.cs",
+              "ToolTip": "C:\\Users\\andre\\Documents\\Github\\UNIR_TopDown2D_Unity\\Assets\\Kits\\SensesSystem\\Scripts\\Sight2D.cs",
+              "RelativeToolTip": "Assets\\Kits\\SensesSystem\\Scripts\\Sight2D.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAzwCcAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-06T16:43:04.505Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Coin.cs",
+              "DocumentMoniker": "C:\\Users\\andre\\Documents\\Github\\UNIR_TopDown2D_Unity\\Assets\\Kits\\GameplayObjects\\Coins\\Scripts\\Coin.cs",
+              "RelativeDocumentMoniker": "Assets\\Kits\\GameplayObjects\\Coins\\Scripts\\Coin.cs",
+              "ToolTip": "C:\\Users\\andre\\Documents\\Github\\UNIR_TopDown2D_Unity\\Assets\\Kits\\GameplayObjects\\Coins\\Scripts\\Coin.cs",
+              "RelativeToolTip": "Assets\\Kits\\GameplayObjects\\Coins\\Scripts\\Coin.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-06T16:38:56.718Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "DropDefinition.cs",
+              "DocumentMoniker": "C:\\Users\\andre\\Documents\\Github\\UNIR_TopDown2D_Unity\\Assets\\Kits\\GameplayObjects\\Drops\\DropDefinition.cs",
+              "RelativeDocumentMoniker": "Assets\\Kits\\GameplayObjects\\Drops\\DropDefinition.cs",
+              "ToolTip": "C:\\Users\\andre\\Documents\\Github\\UNIR_TopDown2D_Unity\\Assets\\Kits\\GameplayObjects\\Drops\\DropDefinition.cs",
+              "RelativeToolTip": "Assets\\Kits\\GameplayObjects\\Drops\\DropDefinition.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-04T14:44:18.623Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "IVisible2D.cs",
+              "DocumentMoniker": "C:\\Users\\andre\\Documents\\Github\\UNIR_TopDown2D_Unity\\Assets\\Kits\\SensesSystem\\Scripts\\IVisible2D.cs",
+              "RelativeDocumentMoniker": "Assets\\Kits\\SensesSystem\\Scripts\\IVisible2D.cs",
+              "ToolTip": "C:\\Users\\andre\\Documents\\Github\\UNIR_TopDown2D_Unity\\Assets\\Kits\\SensesSystem\\Scripts\\IVisible2D.cs",
+              "RelativeToolTip": "Assets\\Kits\\SensesSystem\\Scripts\\IVisible2D.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-04T14:25:50.561Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "BaseVampire.cs",
+              "DocumentMoniker": "C:\\Users\\andre\\Documents\\Github\\UNIR_TopDown2D_Unity\\Assets\\Kits\\Characters\\Enemies\\!Common\\Scripts\\BaseVampire.cs",
+              "RelativeDocumentMoniker": "Assets\\Kits\\Characters\\Enemies\\!Common\\Scripts\\BaseVampire.cs",
+              "ToolTip": "C:\\Users\\andre\\Documents\\Github\\UNIR_TopDown2D_Unity\\Assets\\Kits\\Characters\\Enemies\\!Common\\Scripts\\BaseVampire.cs",
+              "RelativeToolTip": "Assets\\Kits\\Characters\\Enemies\\!Common\\Scripts\\BaseVampire.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-29T02:21:49.969Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PlayerCharacter.cs",
+              "DocumentMoniker": "C:\\Users\\andre\\Documents\\Github\\UNIR_TopDown2D_Unity\\Assets\\Kits\\Characters\\Player\\Scripts\\PlayerCharacter.cs",
+              "RelativeDocumentMoniker": "Assets\\Kits\\Characters\\Player\\Scripts\\PlayerCharacter.cs",
+              "ToolTip": "C:\\Users\\andre\\Documents\\Github\\UNIR_TopDown2D_Unity\\Assets\\Kits\\Characters\\Player\\Scripts\\PlayerCharacter.cs",
+              "RelativeToolTip": "Assets\\Kits\\Characters\\Player\\Scripts\\PlayerCharacter.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAArwDMAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-29T01:21:15.636Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "BaseCharacter.cs",
+              "DocumentMoniker": "C:\\Users\\andre\\Documents\\Github\\UNIR_TopDown2D_Unity\\Assets\\Kits\\Characters\\!Common\\Scripts\\BaseCharacter.cs",
+              "RelativeDocumentMoniker": "Assets\\Kits\\Characters\\!Common\\Scripts\\BaseCharacter.cs",
+              "ToolTip": "C:\\Users\\andre\\Documents\\Github\\UNIR_TopDown2D_Unity\\Assets\\Kits\\Characters\\!Common\\Scripts\\BaseCharacter.cs",
+              "RelativeToolTip": "Assets\\Kits\\Characters\\!Common\\Scripts\\BaseCharacter.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAYwCEAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-29T02:22:00.163Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
