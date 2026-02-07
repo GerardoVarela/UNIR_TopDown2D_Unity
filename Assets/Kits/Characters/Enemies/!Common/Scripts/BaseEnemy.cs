@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class BaseVampire : BaseCharacter
+public class BaseEnemy : BaseCharacter
 {
 
     Sight2D sight;
