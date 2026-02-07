@@ -14,11 +14,13 @@ public class LevelSelector : MonoBehaviour
     public void MainMenu()
     {
         // Load the main menu scene
+        Time.timeScale = 1f;
         SceneManager.LoadScene("MainMenu");
     }
     
     public void LoadLevel(Level level)
     {
+        Time.timeScale = 1f;
         // Load the selected level scene
         string levelName = level.ToString();
         string convertedLevelName = char.ToUpper(levelName[0]) + levelName.Substring(1).ToLower();
