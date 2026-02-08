@@ -18,7 +18,7 @@ public class LevelSelector : MonoBehaviour
         SceneManager.LoadScene("MainMenu");
     }
     
-    public void LoadLevel(Level level)
+    public void LoadLevel(Level level) // ! It would be necessary?
     {
         Time.timeScale = 1f;
         // Load the selected level scene

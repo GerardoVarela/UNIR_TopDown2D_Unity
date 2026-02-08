@@ -206,6 +206,7 @@ GameObject:
   - component: {fileID: 605156139}
   - component: {fileID: 605156138}
   - component: {fileID: 605156137}
+  - component: {fileID: 605156140}
   m_Layer: 5
   m_Name: GameButton3
   m_TagString: Untagged
@@ -277,7 +278,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 605156138}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 605156140}
+        m_TargetAssemblyTypeName: GameToLoad, Assembly-CSharp
+        m_MethodName: LoadGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &605156138
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -316,6 +329,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 605156135}
   m_CullTransparentMesh: 1
+--- !u!114 &605156140
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 605156135}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 703e7f95916c4404cbf6ceb3ce6767e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GameToLoad
+  gameSelected: Game3
+  progressText: {fileID: 666877413}
 --- !u!1 &605270062
 GameObject:
   m_ObjectHideFlags: 0
@@ -1036,6 +1063,7 @@ GameObject:
   - component: {fileID: 752341334}
   - component: {fileID: 752341333}
   - component: {fileID: 752341332}
+  - component: {fileID: 752341335}
   m_Layer: 5
   m_Name: GameButton1
   m_TagString: Untagged
@@ -1107,7 +1135,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 752341333}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 752341335}
+        m_TargetAssemblyTypeName: GameToLoad, Assembly-CSharp
+        m_MethodName: LoadGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &752341333
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1146,6 +1186,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 752341330}
   m_CullTransparentMesh: 1
+--- !u!114 &752341335
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 752341330}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 703e7f95916c4404cbf6ceb3ce6767e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GameToLoad
+  gameSelected: Game1
+  progressText: {fileID: 1259126837}
 --- !u!1 &754610630
 GameObject:
   m_ObjectHideFlags: 0
@@ -1356,6 +1410,63 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 758164824}
   m_CullTransparentMesh: 1
+--- !u!1001 &961569387
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 190409402398242138, guid: fe5587da0c8c25049aa31424cf2894be, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 931.72
+      objectReference: {fileID: 0}
+    - target: {fileID: 190409402398242138, guid: fe5587da0c8c25049aa31424cf2894be, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 676.35
+      objectReference: {fileID: 0}
+    - target: {fileID: 190409402398242138, guid: fe5587da0c8c25049aa31424cf2894be, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 190409402398242138, guid: fe5587da0c8c25049aa31424cf2894be, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 190409402398242138, guid: fe5587da0c8c25049aa31424cf2894be, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 190409402398242138, guid: fe5587da0c8c25049aa31424cf2894be, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 190409402398242138, guid: fe5587da0c8c25049aa31424cf2894be, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 190409402398242138, guid: fe5587da0c8c25049aa31424cf2894be, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 190409402398242138, guid: fe5587da0c8c25049aa31424cf2894be, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 190409402398242138, guid: fe5587da0c8c25049aa31424cf2894be, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1619206089731956121, guid: fe5587da0c8c25049aa31424cf2894be, type: 3}
+      propertyPath: m_Name
+      value: GameManagerInstance
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: fe5587da0c8c25049aa31424cf2894be, type: 3}
 --- !u!1 &1039775935
 GameObject:
   m_ObjectHideFlags: 0
@@ -2367,6 +2478,7 @@ GameObject:
   - component: {fileID: 1673876760}
   - component: {fileID: 1673876759}
   - component: {fileID: 1673876758}
+  - component: {fileID: 1673876761}
   m_Layer: 5
   m_Name: GameButton2
   m_TagString: Untagged
@@ -2438,7 +2550,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1673876759}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1673876761}
+        m_TargetAssemblyTypeName: GameToLoad, Assembly-CSharp
+        m_MethodName: LoadGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1673876759
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2477,6 +2601,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1673876756}
   m_CullTransparentMesh: 1
+--- !u!114 &1673876761
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1673876756}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 703e7f95916c4404cbf6ceb3ce6767e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GameToLoad
+  gameSelected: Game2
+  progressText: {fileID: 2060043564}
 --- !u!1 &1719815910
 GameObject:
   m_ObjectHideFlags: 0
@@ -3015,3 +3153,4 @@ SceneRoots:
   - {fileID: 1719815913}
   - {fileID: 1039775936}
   - {fileID: 1666482270}
+  - {fileID: 961569387}
