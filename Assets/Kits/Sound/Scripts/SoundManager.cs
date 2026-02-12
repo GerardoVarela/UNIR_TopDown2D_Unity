@@ -1,5 +1,13 @@
 using UnityEngine;
 
+[System.Serializable]
+public class LevelMusicEntry
+{
+    public Level level;
+    public MusicType music;
+}
+
+
 public class SoundManager : MonoBehaviour
 {
 
@@ -26,6 +34,17 @@ public class SoundManager : MonoBehaviour
     }
 
     #region MUSIC
+
+    public void PlayLevelMusic(Level level, bool loop = true)
+    {
+        MusicType musicType = database.GetMusicForLevel(level);
+
+        if (musicType == MusicType.Undefined)
+            return;
+
+        PlayMusic(musicType, loop);
+    }
+
 
     public void PlayMusic(MusicType type, bool loop = true)
     {

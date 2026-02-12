@@ -24,6 +24,7 @@ public class LevelSelector : MonoBehaviour
         // Load the selected level scene
         string levelName = level.ToString();
         string convertedLevelName = char.ToUpper(levelName[0]) + levelName.Substring(1).ToLower();
+        SoundManager.Instance?.PlayLevelMusic(level);
         SceneManager.LoadScene(convertedLevelName);
     }
 
