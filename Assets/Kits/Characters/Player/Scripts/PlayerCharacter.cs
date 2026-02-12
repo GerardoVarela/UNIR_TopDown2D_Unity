@@ -17,6 +17,44 @@ public class PlayerCharacter : BaseCharacter
     {
         base.Awake();
         life = GetComponent<Life>();
+
+        // Load player position from saved session if available
+        LoadPlayerPosition();
+    }
+
+    private void LoadPlayerPosition()
+    {
+        // Check if GameManager exists and has an active session
+        if (GameManager.Instance == null)
+        {
+            Debug.LogWarning("PlayerCharacter: GameManager not found, using default position");
+            return;
+        }
+
+        if (!GameManager.Instance.HasActiveSession())
+        {
+            Debug.Log("PlayerCharacter: No active session, using default position");
+            return;
+        }
+
+        PlayerSesionData sessionData = GameManager.Instance.CurrentSessionData;
+
+        if (sessionData == null)
+        {
+            Debug.LogWarning("PlayerCharacter: Session data is null, using default position");
+            return;
+        }
+
+        // Check if the player position has been set (not default Vector2.zero)
+        if (sessionData.playerPosition != Vector2.zero)
+        {
+            transform.position = sessionData.playerPosition;
+            Debug.Log($"PlayerCharacter: Loaded position from save: {sessionData.playerPosition}");
+        }
+        else
+        {
+            Debug.Log($"PlayerCharacter: No saved position found, using default spawn position: {transform.position}");
+        }
     }
 
     private void OnEnable()
@@ -37,10 +75,31 @@ public class PlayerCharacter : BaseCharacter
 
         // Leer los inputs
         Move(rawMove);
-        if(mustPunch)
+        if (mustPunch)
         {
             mustPunch = false;
             PerformPunch();
+        }
+
+        // Update player position in GameManager periodically
+        UpdatePositionInGameManager();
+    }
+
+    private float lastPositionUpdateTime = 0f;
+    private float positionUpdateInterval = 1f; // Update every 1 second
+
+    private void UpdatePositionInGameManager()
+    {
+        // Only update every positionUpdateInterval seconds
+        if (Time.time - lastPositionUpdateTime < positionUpdateInterval)
+            return;
+
+        lastPositionUpdateTime = Time.time;
+
+        // Update GameManager with current position if session is active
+        if (GameManager.Instance != null && GameManager.Instance.HasActiveSession())
+        {
+            GameManager.Instance.UpdatePlayerPosition(transform.position);
         }
     }
     private void OnTriggerEnter2D(Collider2D other)
@@ -72,7 +131,7 @@ public class PlayerCharacter : BaseCharacter
     private void OnDrawGizmos()
     {
         Gizmos.color = Color.red;
-        Gizmos.DrawRay(transform.position, punchDirection*punchRange);
+        Gizmos.DrawRay(transform.position, punchDirection * punchRange);
     }
     private void OnDisable()
     {
