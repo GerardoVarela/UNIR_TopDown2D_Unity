@@ -51,24 +51,24 @@ public class GameManager : MonoBehaviour
         if (isALevel)
         {
             Level currentLevel = (Level)System.Enum.Parse(typeof(Level), currentSceneName.ToUpper());
-            Debug.Log($"GameManager: Current level detected: {currentLevel}");
+            // Debug.Log($"GameManager: Current level detected: {currentLevel}");
 
             // If no active session, try to load the last game played (useful for editor testing)
             if (!HasActiveSession())
             {
-                Debug.Log("GameManager: No active session detected, attempting to load last played game");
+                // Debug.Log("GameManager: No active session detected, attempting to load last played game");
                 TryLoadLastGameForLevel(currentLevel);
             }
             else
             {
                 // Update current session level if a session is already active
                 currentSessionData.level = currentLevel;
-                Debug.Log($"GameManager: Updated active session '{currentSessionName}' to level {currentLevel}");
+                // Debug.Log($"GameManager: Updated active session '{currentSessionName}' to level {currentLevel}");
             }
         }
         else
         {
-            Debug.Log("Current scene is not a level: " + currentSceneName);
+            // Debug.Log("Current scene is not a level: " + currentSceneName);
         }
     }
 
@@ -79,7 +79,7 @@ public class GameManager : MonoBehaviour
 
         if (string.IsNullOrWhiteSpace(lastGameName))
         {
-            Debug.Log("GameManager: No last game found, creating temporary development session");
+            // Debug.Log("GameManager: No last game found, creating temporary development session");
             CreateDevelopmentSession(currentLevel);
             return;
         }
@@ -89,7 +89,7 @@ public class GameManager : MonoBehaviour
 
         if (lastGameData == null)
         {
-            Debug.LogWarning($"GameManager: Could not load last game '{lastGameName}', creating temporary session");
+            // Debug.LogWarning($"GameManager: Could not load last game '{lastGameName}', creating temporary session");
             CreateDevelopmentSession(currentLevel);
             return;
         }
@@ -101,11 +101,11 @@ public class GameManager : MonoBehaviour
         // Check if the saved level matches the current level
         if (lastGameData.level == currentLevel)
         {
-            Debug.Log($"GameManager: Loaded last game '{lastGameName}' - Level matches, using saved data (Position: {lastGameData.playerPosition}, Health: {lastGameData.health}, Coins: {lastGameData.coins})");
+            // Debug.Log($"GameManager: Loaded last game '{lastGameName}' - Level matches, using saved data (Position: {lastGameData.playerPosition}, Health: {lastGameData.health}, Coins: {lastGameData.coins})");
         }
         else
         {
-            Debug.Log($"GameManager: Loaded last game '{lastGameName}' but level mismatch (Saved: {lastGameData.level}, Current: {currentLevel}). Session active but position will reset.");
+            // Debug.Log($"GameManager: Loaded last game '{lastGameName}' but level mismatch (Saved: {lastGameData.level}, Current: {currentLevel}). Session active but position will reset.");
             // Update the level but reset position since we're in a different level
             currentSessionData.level = currentLevel;
             currentSessionData.playerPosition = Vector2.zero;
@@ -119,7 +119,7 @@ public class GameManager : MonoBehaviour
         currentSessionData.level = currentLevel;
         currentSessionData.playerPosition = Vector2.zero;
 
-        Debug.Log($"GameManager: Created development session for level {currentLevel} (not saved to disk)");
+        // Debug.Log($"GameManager: Created development session for level {currentLevel} (not saved to disk)");
     }
 
     private void Start()
@@ -137,7 +137,7 @@ public class GameManager : MonoBehaviour
     {
         if (string.IsNullOrWhiteSpace(sessionName))
         {
-            Debug.LogError("GameManager: Cannot load session - name is null or empty");
+            // Debug.LogError("GameManager: Cannot load session - name is null or empty");
             return;
         }
 
@@ -145,14 +145,14 @@ public class GameManager : MonoBehaviour
 
         if (sessionData == null)
         {
-            Debug.LogError($"GameManager: Failed to load session '{sessionName}'");
+            // Debug.LogError($"GameManager: Failed to load session '{sessionName}'");
             return;
         }
 
         currentSessionName = sessionName;
         currentSessionData = sessionData;
 
-        Debug.Log($"GameManager: Loaded session '{sessionName}' - Level: {sessionData.level}, Health: {sessionData.health}, Coins: {sessionData.coins}");
+        // Debug.Log($"GameManager: Loaded session '{sessionName}' - Level: {sessionData.level}, Health: {sessionData.health}, Coins: {sessionData.coins}");
 
         // Load the level from the session
         LoadLevel(sessionData.level);
@@ -162,14 +162,14 @@ public class GameManager : MonoBehaviour
     {
         if (string.IsNullOrWhiteSpace(sessionName))
         {
-            Debug.LogError("GameManager: Cannot create new session - name is null or empty");
+            // Debug.LogError("GameManager: Cannot create new session - name is null or empty");
             return;
         }
 
         // Check if session already exists
         if (SaveManager.SessionExists(sessionName))
         {
-            Debug.LogWarning($"GameManager: Session '{sessionName}' already exists. Loading existing session instead.");
+            // Debug.LogWarning($"GameManager: Session '{sessionName}' already exists. Loading existing session instead.");
             LoadGameSession(sessionName);
             return;
         }
@@ -178,7 +178,7 @@ public class GameManager : MonoBehaviour
         currentSessionData = SaveManager.CreateNewGameData(sessionName);
         currentSessionName = sessionName;
 
-        Debug.Log($"GameManager: Created new session '{sessionName}'");
+        // Debug.Log($"GameManager: Created new session '{sessionName}'");
 
         // Load the initial level
         LoadLevel(currentSessionData.level);
@@ -188,18 +188,18 @@ public class GameManager : MonoBehaviour
     {
         if (string.IsNullOrWhiteSpace(currentSessionName))
         {
-            Debug.LogWarning("GameManager: No active session to save");
+            // Debug.LogWarning("GameManager: No active session to save");
             return;
         }
 
         if (currentSessionData == null)
         {
-            Debug.LogError("GameManager: Current session data is null");
+            // Debug.LogError("GameManager: Current session data is null");
             return;
         }
 
         SaveManager.SaveGame(currentSessionName, currentSessionData);
-        Debug.Log($"GameManager: Saved current session '{currentSessionName}'");
+        // Debug.Log($"GameManager: Saved current session '{currentSessionName}'");
     }
 
     public void UpdatePlayerPosition(Vector2 position)
@@ -207,11 +207,11 @@ public class GameManager : MonoBehaviour
         if (currentSessionData != null)
         {
             currentSessionData.playerPosition = position;
-            Debug.Log($"GameManager: Updated player position to {position}");
+            // Debug.Log($"GameManager: Updated player position to {position}");
         }
         else
         {
-            Debug.LogWarning("GameManager: Cannot update position - no active session");
+            // Debug.LogWarning("GameManager: Cannot update position - no active session");
         }
     }
 
@@ -220,11 +220,11 @@ public class GameManager : MonoBehaviour
         if (currentSessionData != null)
         {
             currentSessionData.health = health;
-            Debug.Log($"GameManager: Updated player health to {health}");
+            // Debug.Log($"GameManager: Updated player health to {health}");
         }
         else
         {
-            Debug.LogWarning("GameManager: Cannot update health - no active session");
+            // Debug.LogWarning("GameManager: Cannot update health - no active session");
         }
     }
 
@@ -233,11 +233,11 @@ public class GameManager : MonoBehaviour
         if (currentSessionData != null)
         {
             currentSessionData.coins = coins;
-            Debug.Log($"GameManager: Updated player coins to {coins}");
+            // Debug.Log($"GameManager: Updated player coins to {coins}");
         }
         else
         {
-            Debug.LogWarning("GameManager: Cannot update coins - no active session");
+            // Debug.LogWarning("GameManager: Cannot update coins - no active session");
         }
     }
 
@@ -245,20 +245,20 @@ public class GameManager : MonoBehaviour
     {
         if (currentSessionData == null)
         {
-            Debug.LogWarning("GameManager: Cannot save checkpoint - no active session");
+            // Debug.LogWarning("GameManager: Cannot save checkpoint - no active session");
             return;
         }
 
         UpdatePlayerPosition(checkpointPosition);
         SaveCurrentSession();
-        Debug.Log($"GameManager: Checkpoint saved at {checkpointPosition}");
+        // Debug.Log($"GameManager: Checkpoint saved at {checkpointPosition}");
     }
 
     public void NextLevel(Level nextLevel)
     {
         if (currentSessionData == null)
         {
-            Debug.LogWarning("GameManager: Cannot change level - no active session");
+            // Debug.LogWarning("GameManager: Cannot change level - no active session");
             return;
         }
 
@@ -271,7 +271,7 @@ public class GameManager : MonoBehaviour
         // Save the session with new level and reset position
         SaveCurrentSession();
 
-        Debug.Log($"GameManager: Transitioning to next level '{nextLevel}' - Position reset for new level spawn");
+        // Debug.Log($"GameManager: Transitioning to next level '{nextLevel}' - Position reset for new level spawn");
 
         // Load the new level
         LoadLevel(nextLevel);
@@ -283,7 +283,7 @@ public class GameManager : MonoBehaviour
         string levelName = level.ToString();
         string convertedLevelName = char.ToUpper(levelName[0]) + levelName.Substring(1).ToLower();
         SceneManager.LoadScene(convertedLevelName);
-        Debug.Log($"GameManager: Loading level '{convertedLevelName}'");
+        // Debug.Log($"GameManager: Loading level '{convertedLevelName}'");
     }
 
     public bool HasActiveSession()

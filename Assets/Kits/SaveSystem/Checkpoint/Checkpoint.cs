@@ -39,14 +39,14 @@ public class Checkpoint : MonoBehaviour
         // Check if GameManager exists
         if (GameManager.Instance == null)
         {
-            Debug.LogError("Checkpoint: GameManager instance not found - cannot save checkpoint");
+            // Debug.LogError("Checkpoint: GameManager instance not found - cannot save checkpoint");
             return;
         }
 
         // Check if there is an active session
         if (!GameManager.Instance.HasActiveSession())
         {
-            Debug.LogWarning("Checkpoint: No active game session - cannot save checkpoint");
+            // Debug.LogWarning("Checkpoint: No active game session - cannot save checkpoint");
             return;
         }
 
@@ -62,12 +62,12 @@ public class Checkpoint : MonoBehaviour
         if (!hasBeenActivated)
         {
             hasBeenActivated = true;
-            Debug.Log($"Checkpoint: Activated at position {respawnPosition} for session '{GameManager.Instance.CurrentSessionName}'");
+            // Debug.Log($"Checkpoint: Activated at position {respawnPosition} for session '{GameManager.Instance.CurrentSessionName}'");
             OnCheckpointActivated();
         }
         else
         {
-            Debug.Log($"Checkpoint: Progress saved at position {respawnPosition}");
+            // Debug.Log($"Checkpoint: Progress saved at position {respawnPosition}");
         }
     }
 
@@ -75,7 +75,7 @@ public class Checkpoint : MonoBehaviour
     {
         // This can be overridden in derived classes for custom behavior
         // For example: play a sound, show a visual effect, etc.
-        Debug.Log("Checkpoint: OnCheckpointActivated - Add visual/audio feedback here");
+        // Debug.Log("Checkpoint: OnCheckpointActivated - Add visual/audio feedback here");
     }
 
     public void ManualActivate()
@@ -93,7 +93,7 @@ public class Checkpoint : MonoBehaviour
     {
         hasBeenActivated = false;
         lastSaveTime = -999f;
-        Debug.Log("Checkpoint: Reset");
+        // Debug.Log("Checkpoint: Reset");
     }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -102,13 +102,13 @@ public class Checkpoint : MonoBehaviour
         // Validate required references
         if (_respawnPoint == null)
         {
-            Debug.LogWarning("Checkpoint: _respawnPoint is not assigned, using checkpoint position as respawn point");
+            // Debug.LogWarning("Checkpoint: _respawnPoint is not assigned, using checkpoint position as respawn point");
             _respawnPoint = transform;
         }
 
         if (_rangeCheckpoint == null)
         {
-            Debug.LogWarning("Checkpoint: _rangeCheckpoint is not assigned, using checkpoint position for detection");
+            // Debug.LogWarning("Checkpoint: _rangeCheckpoint is not assigned, using checkpoint position for detection");
             _rangeCheckpoint = transform;
         }
 
@@ -120,7 +120,7 @@ public class Checkpoint : MonoBehaviour
         }
         else
         {
-            Debug.LogWarning($"Checkpoint: Player with tag '{playerTag}' not found in the scene");
+            // Debug.LogWarning($"Checkpoint: Player with tag '{playerTag}' not found in the scene");
         }
     }
 
