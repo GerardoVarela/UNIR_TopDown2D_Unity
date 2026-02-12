@@ -11,11 +11,8 @@ public enum UIClipType
 public enum SFXType
 {
     Undefined,
-    PlayerSttack1,
-    PickUpCoin,
+    PlayerAttack1,
     VampireAttack1,
-    VampireReceiveDamage,
-    VampireDeath,
 }
 
 public enum MusicType
@@ -25,8 +22,6 @@ public enum MusicType
     Intro,
     Forest,
     Castle,
-
-
 }
 
 [Serializable]
@@ -53,9 +48,9 @@ public struct MusicClipData
 public class SoundDatabase : ScriptableObject
 {
     [Header("UI Sounds")]
-    private UIClipData[] uiClipList = default;
-    private SFXClipData[] sfxClipList = default;
-    private MusicClipData[] musicClipList = default;
+    [SerializeField] private UIClipData[] uiClipList = default;
+    [SerializeField] private SFXClipData[] sfxClipList = default;
+    [SerializeField] private MusicClipData[] musicClipList = default;
 
     public AudioClip GetUIClip(UIClipType type)
     {
