@@ -283,7 +283,8 @@ public class GameManager : MonoBehaviour
         string levelName = level.ToString();
         string convertedLevelName = char.ToUpper(levelName[0]) + levelName.Substring(1).ToLower();
         SceneManager.LoadScene(convertedLevelName);
-        // Debug.Log($"GameManager: Loading level '{convertedLevelName}'");
+        SoundManager.Instance.PlayLevelMusic(level);
+        Debug.Log($"GameManager: Loading level '{convertedLevelName}'");
     }
 
     public bool HasActiveSession()
