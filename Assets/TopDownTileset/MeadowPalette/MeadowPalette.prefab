@@ -3994,7 +3994,7 @@ GameObject:
   - component: {fileID: 352100941248649538}
   - component: {fileID: 3311462891751174083}
   m_Layer: 0
-  m_Name: ForestPalette
+  m_Name: MeadowPalette
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
