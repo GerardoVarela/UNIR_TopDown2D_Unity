@@ -6,17 +6,18 @@ using UnityEngine.UI;
 
 public class NPC : BaseCharacter
 {
-    public GameObject dialoguePanel;
-    public GameObject hintPanel;
-    public TextMeshProUGUI dialogueText;
-    public string[] dialogue;
-    private int index;
-
+    [Header("NPC Dialogue")]
+    [SerializeField] GameObject dialoguePanel;
+    [SerializeField] GameObject hintPanel;
+    [SerializeField] TextMeshProUGUI dialogueText;
+    [SerializeField] string[] dialogue;
     [SerializeField] float wordSpeed = 0.04f;
+    [SerializeField] Transform playerPosition;
+
+    private int index;
+    private bool isTyping;
+    private Coroutine typingCoroutine;
     private bool playerIsClose;
-
-
-    public Transform playerPosition;
 
     void Start()
     {
@@ -26,16 +27,24 @@ public class NPC : BaseCharacter
     // Update is called once per frame
     protected override void Update()
     {
-        if (Keyboard.current.cKey.isPressed && playerIsClose)
+        if (Keyboard.current.cKey.wasPressedThisFrame && playerIsClose)
         {
             if (!dialoguePanel.activeInHierarchy)
             {
+                // Hide hint and show dialogue
                 FacePlayer();
                 hintPanel.SetActive(false);
                 dialoguePanel.SetActive(true);
-                StartCoroutine(Typing());
+                typingCoroutine = StartCoroutine(Typing());
             }
-            else if (dialogueText.text == dialogue[index])
+            else if (isTyping)
+            {
+                // If C Key was pressed while typing, end the line instantly
+                StopCoroutine(typingCoroutine);
+                dialogueText.text = dialogue[index];
+                isTyping = false;
+            }
+            else
             {
                 NextLine();
             }
@@ -46,14 +55,15 @@ public class NPC : BaseCharacter
 
     private void FacePlayer()
     {
-        Vector2 direction = (playerPosition.transform.position - transform.position).normalized;
-        Move(direction);
+        Vector2 facingDirection = (playerPosition.transform.position - transform.position).normalized;
+        Move(facingDirection);
     }
 
-    private void ResetPosition()
+    private Vector2 initialFacingDirection = new Vector2(0,0);
+    private void ResetFacingDirection()
     {
-        Vector2 direction = new Vector2(0, 0);
-        Move(direction);
+        Vector2 facingDirection = initialFacingDirection;
+        Move(facingDirection);
     }
 
     private void RemoveText()
@@ -65,11 +75,16 @@ public class NPC : BaseCharacter
 
     private IEnumerator Typing()
     {
+        isTyping = true;
+        dialogueText.text = ""; 
+
         foreach (char letter in dialogue[index].ToCharArray())
         {
+            if (!isTyping) break; // If C Key was pressed, the variable is updated in Update method
             dialogueText.text += letter;
             yield return new WaitForSeconds(wordSpeed);
         }
+        isTyping = false;
     }
 
     private void NextLine()
@@ -101,8 +116,15 @@ public class NPC : BaseCharacter
         {
             playerIsClose = false;
             hintPanel.SetActive(false);
+
+            if (typingCoroutine != null)
+            {
+                StopCoroutine(typingCoroutine);
+                typingCoroutine = null;
+            }
+
             RemoveText();
-            ResetPosition();
+            ResetFacingDirection();
         }
     }
 }
