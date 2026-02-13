@@ -35,7 +35,11 @@ public class MainMenuNavigation : MonoBehaviour
         if(firstSelectedGameSelector == null) 
             Debug.LogError("MainMenuNavigation.cs: First Selected Game Selector is not assigned in the inspector.");
     }
-    
+
+    private void Start()
+    {
+        SoundManager.Instance?.PlayMusic(MusicType.TitleTheme);
+    }
     private void OnStart(InputAction.CallbackContext context)
     {
         if(_pressedStart) return;

@@ -2,7 +2,6 @@ using UnityEngine;
 
 public class BaseEnemy : BaseCharacter
 {
-
     Sight2D sight;
 
     protected override void Awake()
@@ -14,10 +13,27 @@ public class BaseEnemy : BaseCharacter
     protected override void Update()
     {
         base.Update();
-        Transform closesTarget = sight.GetClosesTarget();
-        if (closesTarget != null)
+
+        Transform closestTarget = sight.GetClosesTarget();
+        if (closestTarget == null)
+            return;
+
+        Vector2 directionToTarget =
+            (closestTarget.position - transform.position).normalized;
+
+        attackDirection = directionToTarget;
+        Move(directionToTarget);
+
+        float distance =
+            Vector2.Distance(transform.position, closestTarget.position);
+
+        if (distance <= attackRange)
         {
-            Move((closesTarget.position - transform.position).normalized);
+            PerformDirectionalAttack();
         }
     }
+
+
+
+
 }
