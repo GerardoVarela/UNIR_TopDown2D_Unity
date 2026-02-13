@@ -1444,10 +1444,14 @@ MonoBehaviour:
   linearSpeed: 0.8
   priority: 0
   side: 0
+  life: {fileID: 0}
+  attackRange: 1
+  attackRadius: 0.3
+  attackDamage: 0.2
+  attackCooldown: 1
+  directionalAttackSoundType: 0
   move: {fileID: 763525692}
   punch: {fileID: 807459521}
-  punchRadius: 0.3
-  punchRange: 1
 --- !u!212 &187235352
 SpriteRenderer:
   serializedVersion: 2
@@ -1516,7 +1520,7 @@ Transform:
   m_GameObject: {fileID: 187235349}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.84, y: 0.65, z: 0}
+  m_LocalPosition: {x: 2.37, y: -0.42, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -20596,6 +20600,12 @@ MonoBehaviour:
   linearSpeed: 1
   priority: 0
   side: 0
+  life: {fileID: 0}
+  attackRange: 1
+  attackRadius: 0.3
+  attackDamage: 0.2
+  attackCooldown: 1
+  directionalAttackSoundType: 0
   dialoguePanel: {fileID: 998719141}
   hintPanel: {fileID: 1559680914}
   dialogueText: {fileID: 606729267}
@@ -22368,7 +22378,7 @@ Transform:
   m_GameObject: {fileID: 1979580841}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.84, y: 0.65, z: -10}
+  m_LocalPosition: {x: 2.37, y: -0.42, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -22551,7 +22561,7 @@ Transform:
   m_GameObject: {fileID: 2134201834}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.84, y: 0.65, z: -10}
+  m_LocalPosition: {x: 2.37, y: -0.42, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
