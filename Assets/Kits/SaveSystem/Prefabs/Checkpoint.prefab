@@ -171,6 +171,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Checkpoint
   _respawnPoint: {fileID: 3580446428238952149}
   _rangeCheckpoint: {fileID: 7797251130290187482}
+  detectionRadius: 0.35
+  autoSaveOnTouch: 1
+  saveCooldown: 2
+  playerTag: Player
 --- !u!61 &97548329372792586
 BoxCollider2D:
   m_ObjectHideFlags: 0
