@@ -9,6 +9,7 @@ public class PlayerSesionData
     public int health;
     public int coins;
     // Add other relevant player data as needed
+    
 
     public PlayerSesionData() // New Game
     {
