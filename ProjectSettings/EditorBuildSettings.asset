@@ -16,7 +16,7 @@ EditorBuildSettings:
     guid: 3434ccf958df98f44985673e6570b2ed
   - enabled: 1
     path: Assets/Scenes/Levels/Cave.unity
-    guid: fbc1438179ab3714cbc798868b90526f
+    guid: fdcdcb2fdd5d81b42bff2ec87b771e2c
   - enabled: 1
     path: Assets/Scenes/Levels/Castle.unity
     guid: b7a47b20dd1562c46ae3f78b2158eb41

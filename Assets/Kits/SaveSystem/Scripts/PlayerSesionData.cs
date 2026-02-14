@@ -12,7 +12,7 @@ public class PlayerSesionData
 
     public PlayerSesionData() // New Game
     {
-        this.level = Level.CAVE;
+        this.level = Level.MEADOW;
         this.health = 100;
         this.coins = 0;
     }
