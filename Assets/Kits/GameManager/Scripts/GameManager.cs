@@ -276,7 +276,7 @@ public class GameManager : MonoBehaviour
         // Load the new level
         LoadLevel(nextLevel);
     }
-
+    
     private void LoadLevel(Level level)
     {
         Time.timeScale = 1f;
