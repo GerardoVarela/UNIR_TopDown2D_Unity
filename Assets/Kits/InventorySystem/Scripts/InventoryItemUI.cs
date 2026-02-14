@@ -5,10 +5,12 @@ using TMPro;
 
 public class InventoryItemUI : MonoBehaviour
 {
-    [SerializeField] InventoryItemDefinition definition;
+    [SerializeField] public InventoryItemDefinition definition;
     [SerializeField] Image image;
     [SerializeField] TextMeshProUGUI text;
     [SerializeField] Button[] buttons;
+    
+    InventoryUI inventoryUI;
 
     enum ButtonAction
     {
@@ -28,6 +30,10 @@ public class InventoryItemUI : MonoBehaviour
         {
             image = GetComponentInChildren<Image>();
         }
+
+        inventoryUI = GetComponentInParent<InventoryUI>();
+
+        //definition = Instantiate(definition);
     }
     private void OnEnable()
     {
@@ -48,10 +54,16 @@ public class InventoryItemUI : MonoBehaviour
     {
         Init(definition);
     }
-    public void Init(InventoryItemDefinition definition)
+
+    public void SetDefinition(InventoryItemDefinition newDefinition)
+    {
+        definition = Instantiate(newDefinition);
+        //Init(definition);
+    }
+    private void Init(InventoryItemDefinition definition)
     {
         image.sprite = definition.image;
-        text.text = definition.itemName;
+        text.text = definition.uniqueItemName;
 
     }
 
@@ -64,6 +76,12 @@ public class InventoryItemUI : MonoBehaviour
     void OnUse()
     {
         Debug.Log("OnUse", gameObject);
+        inventoryUI.NotifyInventoryItemUsed(definition);
+        definition.numUses--;
+        if (definition.numUses <= 0)
+        {
+            Destroy(gameObject);
+        }
     }
 
     void OnGive()

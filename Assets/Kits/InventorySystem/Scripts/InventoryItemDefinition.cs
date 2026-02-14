@@ -1,10 +1,13 @@
 using UnityEngine;
+using UnityEngine.Serialization;
 
 [CreateAssetMenu()]
 public class InventoryItemDefinition : ScriptableObject
 {
     public Sprite image;
-    public string itemName;
+    [FormerlySerializedAs("itemName")]
+    public string uniqueItemName;
     public float healthRecovery;
     public int bullets;
+    public int numUses = 1;
 }
