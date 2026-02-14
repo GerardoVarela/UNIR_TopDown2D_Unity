@@ -48,9 +48,6 @@ TagManager:
   - name: BackgroundStuff
     uniqueID: 691079539
     locked: 0
-  - name: CloudShadows
-    uniqueID: 3948989391
-    locked: 0
   - name: Water
     uniqueID: 3201413821
     locked: 0

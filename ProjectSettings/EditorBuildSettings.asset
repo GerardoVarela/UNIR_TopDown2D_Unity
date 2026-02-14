@@ -12,6 +12,9 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenu.unity
     guid: e058d41b02b7d7546b01c22d9b1fc3c7
   - enabled: 1
+    path: Assets/Scenes/Levels/Meadow.unity
+    guid: 3434ccf958df98f44985673e6570b2ed
+  - enabled: 1
     path: Assets/Scenes/Levels/Cave.unity
     guid: fbc1438179ab3714cbc798868b90526f
   - enabled: 1
