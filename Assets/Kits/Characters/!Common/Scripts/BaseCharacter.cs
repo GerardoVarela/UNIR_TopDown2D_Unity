@@ -93,7 +93,13 @@ public class BaseCharacter : MonoBehaviour, IVisible2D
         Gizmos.DrawLine(start + rightOffset, end + rightOffset);
         Gizmos.DrawLine(start - rightOffset, end - rightOffset);
     }
-
+    public virtual void ApplyItemEffect(ItemEffectDefinition itemEffectDefinition)
+    {
+        if (itemEffectDefinition)
+        {
+            life.RecoverHealth(itemEffectDefinition.healthRecovery);
+        }
+    }
     int IVisible2D.GetPriority()
     {
         return priority;

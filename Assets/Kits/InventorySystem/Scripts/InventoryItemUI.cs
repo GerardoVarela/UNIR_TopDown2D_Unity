@@ -1,95 +1,51 @@
-using Unity.VisualScripting;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
-using TMPro;
 
 public class InventoryItemUI : MonoBehaviour
 {
-    [SerializeField] public InventoryItemDefinition definition;
     [SerializeField] Image image;
     [SerializeField] TextMeshProUGUI text;
-    [SerializeField] Button[] buttons;
-    
-    InventoryUI inventoryUI;
+    [SerializeField] GameObject useButtonParent;
+    [SerializeField] Button useButton;
+    [SerializeField] GameObject dropButtonParent;
+    [SerializeField] Button dropButton;
 
-    enum ButtonAction
+    InventoryItem item;
+    Inventory inventory;
+
+    public void Init(InventoryItem newItem, Inventory inv)
     {
-        Discard,
-        Use,
-        Give,
-        Sell,
-    }
-    private void Awake()
-    {
-        if (buttons == null || buttons.Length == 0)
+        item = newItem;
+        inventory = inv;
+        InventoryItemDefinition definition = inventory.GetDatabase().GetDefinition(item.uniqueItemName);
+
+        
+        if (definition != null)
         {
-            buttons = GetComponentsInChildren<Button>();
+            image.sprite = definition.image;
+            text.text = definition.displayName + " (" + item.remainingUses + ")";
+            useButtonParent.SetActive(definition.usableInUI);
+            useButton.enabled = definition.usableInUI;
+            dropButtonParent.SetActive(definition.removableInUI);
+            dropButton.enabled = definition.removableInUI;
         }
 
-        if (image == null)
-        {
-            image = GetComponentInChildren<Image>();
-        }
 
-        inventoryUI = GetComponentInParent<InventoryUI>();
+        useButton.onClick.RemoveAllListeners();
+        dropButton.onClick.RemoveAllListeners();
 
-        //definition = Instantiate(definition);
-    }
-    private void OnEnable()
-    {
-        buttons[(int)ButtonAction.Discard].onClick.AddListener(OnDiscard);
-        buttons[(int)ButtonAction.Use].onClick.AddListener(OnUse);
-        buttons[(int)ButtonAction.Give].onClick.AddListener(OnGive);
-        buttons[(int)ButtonAction.Sell].onClick.AddListener(OnSell);
-    }
-    private void OnDisable()
-    {
-        buttons[(int)ButtonAction.Discard].onClick.RemoveListener(OnDiscard);
-        buttons[(int)ButtonAction.Use].onClick.RemoveListener(OnUse);
-        buttons[(int)ButtonAction.Give].onClick.RemoveListener(OnGive);
-        buttons[(int)ButtonAction.Sell].onClick.RemoveListener(OnSell);
+        useButton.onClick.AddListener(OnUseClicked);
+        dropButton.onClick.AddListener(OnDiscardClicked);
     }
 
-    private void Start()
+    void OnUseClicked()
     {
-        Init(definition);
+        inventory.UseItem(item);
     }
 
-    public void SetDefinition(InventoryItemDefinition newDefinition)
+    void OnDiscardClicked()
     {
-        definition = Instantiate(newDefinition);
-        //Init(definition);
-    }
-    private void Init(InventoryItemDefinition definition)
-    {
-        image.sprite = definition.image;
-        text.text = definition.uniqueItemName;
-
-    }
-
-
-    void OnDiscard()
-    {
-        Debug.Log("OnDiscard", gameObject);
-    }
-
-    void OnUse()
-    {
-        Debug.Log("OnUse", gameObject);
-        inventoryUI.NotifyInventoryItemUsed(definition);
-        definition.numUses--;
-        if (definition.numUses <= 0)
-        {
-            Destroy(gameObject);
-        }
-    }
-
-    void OnGive()
-    {
-        Debug.Log("OnGive", gameObject);
-    }
-    void OnSell()
-    {
-        Debug.Log("OnSell", gameObject);
+        inventory.RemoveItem(item, true);
     }
 }
