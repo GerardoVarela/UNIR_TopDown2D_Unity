@@ -13,12 +13,12 @@ public class InventoryUI : MonoBehaviour
 
     private void Awake()
     {
-        if (instance!=null)
+        if (instance != null)
         {
             throw new System.Exception("There is more than one inventory UI");
         }
         instance = this;
-        if(grid == null)
+        if (grid == null)
         {
             grid = GetComponentInChildren<GridLayoutGroup>();
         }
@@ -28,7 +28,7 @@ public class InventoryUI : MonoBehaviour
         GameObject instatiatedPrefab = Instantiate(inventoryItemPrefab, grid.transform);
         InventoryItemUI itemUI = instatiatedPrefab.GetComponent<InventoryItemUI>();
         itemUI?.SetDefinition(itemDefinition);
-        
+
     }
 
     internal void NotifyInventoryItemUsed(InventoryItemDefinition definition)
@@ -39,7 +39,7 @@ public class InventoryUI : MonoBehaviour
     internal bool Contains(InventoryItemDefinition keyDefinition)
     {
         InventoryItemUI[] items = GetComponentsInChildren<InventoryItemUI>();
-        return Array.Find(items, x => x.definition.uniqueItemName == keyDefinition.uniqueItemName);
+        return Array.Exists(items, x => x.definition.uniqueItemName == keyDefinition.uniqueItemName);
     }
 
     internal void Consume(InventoryItemDefinition keyDefinition)
@@ -47,7 +47,7 @@ public class InventoryUI : MonoBehaviour
         InventoryItemUI[] items = GetComponentsInChildren<InventoryItemUI>();
         InventoryItemUI item = Array.Find(items, x => x.definition.uniqueItemName == keyDefinition.uniqueItemName);
         item.definition.numUses--;
-        if(item.definition.numUses <= 0)
+        if (item.definition.numUses <= 0)
         {
             Destroy(item.gameObject);
         }

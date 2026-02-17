@@ -7,6 +7,8 @@ public class LockedDoor : MonoBehaviour
     {
         if (collision.collider.CompareTag("Player"))
         {
+            Debug.Log("Colisiona");
+            Debug.Log(InventoryUI.instance.Contains(keyDefinition));
             if (InventoryUI.instance.Contains(keyDefinition))
             {
                 InventoryUI.instance.Consume(keyDefinition);
