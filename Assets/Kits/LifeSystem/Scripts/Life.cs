@@ -35,7 +35,7 @@ public class Life : MonoBehaviour
         if (currentLife > 0f)
         {
             currentLife -= damage;
-            onLifeChanged.Invoke(currentLife);
+            onLifeChanged.Invoke(currentLife/startingLife);
             if (currentLife < 0f)
             {
                 onDeath.Invoke();
@@ -54,7 +54,7 @@ public class Life : MonoBehaviour
         if (currentLife > 0f)
         {
             currentLife += healthRecovery;
-            currentLife = Mathf.Clamp01(currentLife);
+            currentLife = Mathf.Clamp(currentLife/startingLife,0f, startingLife);
             onLifeChanged.Invoke(currentLife);
         }
     }

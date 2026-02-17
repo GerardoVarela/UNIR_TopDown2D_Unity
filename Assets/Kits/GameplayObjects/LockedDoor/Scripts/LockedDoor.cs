@@ -2,18 +2,24 @@ using UnityEngine;
 
 public class LockedDoor : MonoBehaviour
 {
-    [SerializeField] InventoryItemDefinition keyDefinition;
+    [SerializeField] InventoryItemDefinition requiredKey;
+
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.collider.CompareTag("Player"))
+        if (!collision.collider.CompareTag("Player"))
+            return;
+
+        Inventory inventory = collision.collider.GetComponent<Inventory>();
+        if (inventory == null)
+            return;
+
+        InventoryItem keyItem = inventory.GetItem(requiredKey.uniqueItemName);
+
+        if (keyItem != null)
         {
-            Debug.Log("Colisiona");
-            Debug.Log(InventoryUI.instance.Contains(keyDefinition));
-            if (InventoryUI.instance.Contains(keyDefinition))
-            {
-                InventoryUI.instance.Consume(keyDefinition);
-                Destroy(gameObject);
-            }
+            inventory.RemoveItem(keyItem);
+            Destroy(gameObject);
         }
     }
+
 }

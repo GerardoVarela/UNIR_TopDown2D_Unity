@@ -1,56 +1,59 @@
 using System;
-using UnityEditor.Tilemaps;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.UI;
+
 public class InventoryUI : MonoBehaviour
 {
-    public static InventoryUI instance;
-
-    [SerializeField] PlayerCharacter owner;
-
+    [Header("Input Actions")]
+    [SerializeField] private InputActionReference toggleInventory;
+    [Header("References")]
+    [SerializeField] GameObject inventoryPanel;
+    [SerializeField] Inventory inventory;
     [SerializeField] GameObject inventoryItemPrefab;
     [SerializeField] GridLayoutGroup grid;
+    
 
-    private void Awake()
+    private void OnEnable()
     {
-        if (instance != null)
+        if (inventory != null)
         {
-            throw new System.Exception("There is more than one inventory UI");
-        }
-        instance = this;
-        if (grid == null)
-        {
-            grid = GetComponentInChildren<GridLayoutGroup>();
-        }
-    }
-    public void NotifyItemPicked(InventoryItemDefinition itemDefinition)
-    {
-        GameObject instatiatedPrefab = Instantiate(inventoryItemPrefab, grid.transform);
-        InventoryItemUI itemUI = instatiatedPrefab.GetComponent<InventoryItemUI>();
-        itemUI?.SetDefinition(itemDefinition);
-
-    }
-
-    internal void NotifyInventoryItemUsed(InventoryItemDefinition definition)
-    {
-
-    }
-
-    internal bool Contains(InventoryItemDefinition keyDefinition)
-    {
-        InventoryItemUI[] items = GetComponentsInChildren<InventoryItemUI>();
-        return Array.Exists(items, x => x.definition.uniqueItemName == keyDefinition.uniqueItemName);
-    }
-
-    internal void Consume(InventoryItemDefinition keyDefinition)
-    {
-        InventoryItemUI[] items = GetComponentsInChildren<InventoryItemUI>();
-        InventoryItemUI item = Array.Find(items, x => x.definition.uniqueItemName == keyDefinition.uniqueItemName);
-        item.definition.numUses--;
-        if (item.definition.numUses <= 0)
-        {
-            Destroy(item.gameObject);
+            inventory.OnInventoryChanged += RefreshUI;
+            RefreshUI();
         }
 
+
+        toggleInventory.action.Enable();
+        toggleInventory.action.performed += OnToggleInventory;
+    }
+
+    private void OnToggleInventory(InputAction.CallbackContext context)
+    {
+        inventoryPanel.SetActive(!inventoryPanel.activeSelf);
+    }
+
+    private void OnDisable()
+    {
+        if (inventory != null)
+        {
+            inventory.OnInventoryChanged -= RefreshUI;
+        }
+        toggleInventory.action.performed -= OnToggleInventory;
+        toggleInventory.action.Disable();
+    }
+
+    void RefreshUI()
+    {
+        foreach (Transform child in grid.transform)
+        {
+            Destroy(child.gameObject);
+        }
+
+        foreach (var item in inventory.GetItems())
+        {
+            GameObject go = Instantiate(inventoryItemPrefab, grid.transform);
+            InventoryItemUI ui = go.GetComponent<InventoryItemUI>();
+            ui.Init(item, inventory);
+        }
     }
 }
