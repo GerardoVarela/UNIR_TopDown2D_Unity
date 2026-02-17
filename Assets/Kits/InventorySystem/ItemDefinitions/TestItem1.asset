@@ -12,7 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5021dd13a560a3f428e486c1a6528c5f, type: 3}
   m_Name: TestItem1
   m_EditorClassIdentifier: Assembly-CSharp::InventoryItemDefinition
-  image: {fileID: 3681601231273768170, guid: 9594fc8d64a0cab4cb47341970578dba, type: 3}
-  itemName: Test item 1
-  healthRecovery: 0
+  healthRecovery: 2
   bullets: 0
+  image: {fileID: 3681601231273768170, guid: 9594fc8d64a0cab4cb47341970578dba, type: 3}
+  uniqueItemName: HealthPotion1
+  displayName: Health Potion
+  numUses: 1
+  usableInUI: 1
+  removableInUI: 1

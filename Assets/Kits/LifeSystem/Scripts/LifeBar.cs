@@ -15,7 +15,7 @@ public class LifeBar : MonoBehaviour
 
     void OnLifeChanged(float newLife)
     {
-        UpdateLifeSegments(newLife);
+        UpdateLifeSegments(Mathf.Clamp01(newLife));
     }
 
     //This is for a life bar with many fill sprites, like many hearts

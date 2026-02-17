@@ -779,7 +779,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &5218261462926807225
 RectTransform:
   m_ObjectHideFlags: 0
@@ -882,19 +882,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1952307630604666409}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1408821822933200023}
+      - m_Target: {fileID: 4157544790498138402}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
@@ -1059,7 +1047,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &594032089183321853
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1258,7 +1246,7 @@ RectTransform:
   m_Father: {fileID: 6663836309274817312}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -2209,7 +2197,7 @@ RectTransform:
   m_Father: {fileID: 4379786720281926108}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -2400,14 +2388,13 @@ GameObject:
   - component: {fileID: 714058575685268395}
   - component: {fileID: 8998344513382243643}
   - component: {fileID: 1287991702217634778}
-  - component: {fileID: 8365521189082891407}
   m_Layer: 5
   m_Name: InventoryUI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &6678027274424467774
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2492,21 +2479,6 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
---- !u!114 &8365521189082891407
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4157544790498138402}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f0a81fa1ea7903549bdb8aa741a6aec3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::InventoryUI
-  owner: {fileID: 0}
-  inventoryItemPrefab: {fileID: 8904676795977480805, guid: 3cf36715f2b250046b3f08b873c91e10, type: 3}
-  grid: {fileID: 7570179573907270127}
 --- !u!1 &4220413559281911413
 GameObject:
   m_ObjectHideFlags: 0
@@ -2754,19 +2726,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1952307630604666409}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 1408821822933200023}
+      - m_Target: {fileID: 4157544790498138402}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
@@ -3679,7 +3639,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 20}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &6916516477454076456
 MonoBehaviour:
@@ -4373,6 +4333,7 @@ GameObject:
   - component: {fileID: 6396913944633457367}
   - component: {fileID: 1268805528743459499}
   - component: {fileID: 493430697189723796}
+  - component: {fileID: 7193976641849802636}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -4501,6 +4462,23 @@ MonoBehaviour:
   askQuitGameUI: {fileID: 1264251439897627965}
   eventSystem: {fileID: 0}
   firstSelectedGameSelector: {fileID: 2825559234860279847}
+--- !u!114 &7193976641849802636
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7128764558074774376}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f0a81fa1ea7903549bdb8aa741a6aec3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InventoryUI
+  toggleInventory: {fileID: 0}
+  inventoryPanel: {fileID: 4157544790498138402}
+  inventory: {fileID: 0}
+  inventoryItemPrefab: {fileID: 8904676795977480805, guid: 3cf36715f2b250046b3f08b873c91e10, type: 3}
+  grid: {fileID: 7570179573907270127}
 --- !u!1 &7156870512584532193
 GameObject:
   m_ObjectHideFlags: 0

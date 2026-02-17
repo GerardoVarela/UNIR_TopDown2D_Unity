@@ -13,6 +13,10 @@ MonoBehaviour:
   m_Name: TestItem2
   m_EditorClassIdentifier: Assembly-CSharp::InventoryItemDefinition
   image: {fileID: 4417006001543893205, guid: 9594fc8d64a0cab4cb47341970578dba, type: 3}
-  itemName: Test item 2
+  uniqueItemName: Test item 2
+  displayName: 
   healthRecovery: 0
   bullets: 0
+  numUses: 1
+  usableInUI: 1
+  removableInUI: 1
