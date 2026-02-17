@@ -6,10 +6,16 @@ using UnityEngine.UI;
 
 public class NPC : BaseCharacter
 {
+    [Header("NPC Info")]
+    [SerializeField] string npcName;
+    [SerializeField] Color npcColor;
+    [SerializeField] Sprite npcProfilePIC;
     [Header("NPC Dialogue")]
     [SerializeField] GameObject dialoguePanel;
     [SerializeField] GameObject hintPanel;
     [SerializeField] TextMeshProUGUI dialogueText;
+    [SerializeField] Image dialogueNPCImage;
+    [SerializeField] TextMeshProUGUI dialogueNPCName;
     [SerializeField] string[] dialogue;
     [SerializeField] float wordSpeed = 0.04f;
     [SerializeField] Transform playerPosition;
@@ -22,6 +28,10 @@ public class NPC : BaseCharacter
     void Start()
     {
         dialogueText.text = "";
+        dialogueNPCImage.sprite = npcProfilePIC;
+        dialogueNPCName.text = npcName;
+        npcColor.a = 1f;
+        dialogueNPCName.color = npcColor;
     }
 
     // Update is called once per frame

@@ -28,7 +28,7 @@ public class BaseCharacter : MonoBehaviour, IVisible2D
     {
         rb2D = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
-        if (life == null) { life = GetComponent<Life>(); }
+        if (life == null && !transform.CompareTag("NPC")) { life = GetComponent<Life>(); }
     }
 
     protected virtual void Update()
