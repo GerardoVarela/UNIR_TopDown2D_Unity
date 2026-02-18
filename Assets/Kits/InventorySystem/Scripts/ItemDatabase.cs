@@ -14,8 +14,7 @@ public class ItemDatabase : ScriptableObject
 
         foreach (var prefab in pickablePrefabs)
         {
-            PickableInventoryItem pickable =
-                prefab.GetComponent<PickableInventoryItem>();
+            PickableInventoryItem pickable = prefab.GetComponent<PickableInventoryItem>();
 
             if (pickable == null)
             {

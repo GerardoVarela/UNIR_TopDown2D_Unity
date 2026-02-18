@@ -16,7 +16,11 @@ public class BaseEnemy : BaseCharacter
 
         Transform closestTarget = sight.GetClosesTarget();
         if (closestTarget == null)
+        {
+            RequestStopMoving();
+
             return;
+        }
 
         Vector2 directionToTarget =
             (closestTarget.position - transform.position).normalized;

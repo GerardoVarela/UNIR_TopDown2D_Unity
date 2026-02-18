@@ -47,10 +47,21 @@ public class Inventory : MonoBehaviour
         if (item == null || !items.Contains(item))
             return;
 
-        ItemEffectDefinition effectDefinition = database.GetDefinition(item.uniqueItemName);
-        if (effectDefinition != null)
+        InventoryItemDefinition itemDefinition = database.GetDefinition(item.uniqueItemName);
+        if (itemDefinition != null)
         {
-            character.ApplyItemEffect(effectDefinition);
+            character.ApplyItemEffect(itemDefinition);
+            if (itemDefinition.objectToSpawnOnUse != null)
+            {
+                GameObject spawnedObject = Instantiate(itemDefinition.objectToSpawnOnUse, transform.position, Quaternion.identity);
+
+                PlayerShadow playerShadow = spawnedObject.GetComponent<PlayerShadow>();
+                if (playerShadow != null)
+                {
+                    playerShadow.SetPlayerTarget(transform); 
+                }
+            }
+
         }
         item.remainingUses--;
 

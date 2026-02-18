@@ -6,16 +6,22 @@ public class BaseCharacter : MonoBehaviour, IVisible2D
     [SerializeField] float linearSpeed = 1f;
 
     [SerializeField] int priority = 0;
-    [SerializeField] IVisible2D.Side side;
+    [SerializeField] protected IVisible2D.Side side;
     [SerializeField] protected Life life;
 
     [Header("Directional Attack")]
+    [SerializeField] IVisible2D.Side[] sidesToAttrack;
     [SerializeField] protected float attackRange = 1f;
     [SerializeField] protected float attackRadius = 0.3f;
     [SerializeField] protected float attackDamage = 0.2f;
     [SerializeField] protected float attackCooldown = 1f;
     [Header("Sound")]
     [SerializeField] protected SFXType directionalAttackSoundType = SFXType.Undefined;
+    [Header("Idle Delay")]
+    [SerializeField] float stopMovingDelay = 0.25f;
+
+    float stopMoveTimer = 0f;
+    bool isTryingToStop = false;
 
     protected Vector2 attackDirection = Vector2.down;
 
@@ -36,6 +42,17 @@ public class BaseCharacter : MonoBehaviour, IVisible2D
 
         animator.SetFloat("HorizontalVelocity", lastMoveDirection.x);
         animator.SetFloat("VerticalVelocity", lastMoveDirection.y);
+
+        if (isTryingToStop)
+        {
+            stopMoveTimer += Time.deltaTime;
+
+            if (stopMoveTimer >= stopMovingDelay)
+            {
+                ForceStopMoving();
+            }
+        }
+
     }
 
     Vector2 lastMoveDirection;
@@ -43,7 +60,10 @@ public class BaseCharacter : MonoBehaviour, IVisible2D
     {
         rb2D.position += direction * linearSpeed * Time.deltaTime;
         lastMoveDirection = direction;
+
+        isTryingToStop = false; 
     }
+
 
     public virtual void NotifyPunch(float damage)
     {
@@ -72,7 +92,29 @@ public class BaseCharacter : MonoBehaviour, IVisible2D
 
             if (other != null && other != this)
             {
-                other.NotifyPunch(attackDamage);
+                IVisible2D visible = other as IVisible2D;
+
+                if (visible != null)
+                {
+                    IVisible2D.Side otherSide = visible.GetSide();
+
+                    bool canBeAttacked = false;
+
+                    foreach (var side in sidesToAttrack)
+                    {
+                        if (side == otherSide)
+                        {
+                            canBeAttacked = true;
+                            break;
+                        }
+                    }
+
+                    if (canBeAttacked)
+                    {
+                        other.NotifyPunch(attackDamage);
+                    }
+                }
+
             }
         }
     }
@@ -100,6 +142,23 @@ public class BaseCharacter : MonoBehaviour, IVisible2D
             life.RecoverHealth(itemEffectDefinition.healthRecovery);
         }
     }
+
+    protected void RequestStopMoving()
+    {
+        if (!isTryingToStop)
+        {
+            isTryingToStop = true;
+            stopMoveTimer = 0f;
+        }
+    }
+    void ForceStopMoving()
+    {
+        lastMoveDirection = Vector2.zero;
+        isTryingToStop = false;
+    }
+
+
+
     int IVisible2D.GetPriority()
     {
         return priority;
