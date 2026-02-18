@@ -12,8 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5021dd13a560a3f428e486c1a6528c5f, type: 3}
   m_Name: KeyCave
   m_EditorClassIdentifier: Assembly-CSharp::InventoryItemDefinition
-  image: {fileID: 1694913177206695654, guid: 0eaea8bc42be8db48868883d58c733fe, type: 3}
-  uniqueItemName: Key
   healthRecovery: 0
   bullets: 0
+  image: {fileID: 1694913177206695654, guid: 0eaea8bc42be8db48868883d58c733fe, type: 3}
+  uniqueItemName: Key
+  displayName: Llave de cueva
   numUses: 1
+  usableInUI: 0
+  removableInUI: 1
