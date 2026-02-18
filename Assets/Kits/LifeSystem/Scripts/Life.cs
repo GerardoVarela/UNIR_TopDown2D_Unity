@@ -15,6 +15,7 @@ public class Life : MonoBehaviour
 
     [SerializeField] public UnityEvent<float> onLifeChanged;
     [SerializeField] public UnityEvent onDeath;
+    [SerializeField] public GameObject dropPrefab;
 
     private void OnValidate()
     {
@@ -38,6 +39,12 @@ public class Life : MonoBehaviour
             if (currentLife < 0f)
             {
                 onDeath.Invoke();
+                Vector3 offset = new Vector3(0, 0.5f, 0);
+                if (dropPrefab != null)
+                {
+                    Instantiate(dropPrefab, transform.position, Quaternion.identity);
+                }
+                Destroy(gameObject);
             }
         }
     }
