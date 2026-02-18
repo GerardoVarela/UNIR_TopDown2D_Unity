@@ -114,11 +114,13 @@ MonoBehaviour:
   priority: 0
   side: 0
   life: {fileID: 8866533460439102040}
+  sidesToAttrack: 01000000
   attackRange: 0.24
   attackRadius: 0.11
   attackDamage: 0.2
   attackCooldown: 1
   directionalAttackSoundType: 1
+  stopMovingDelay: 0.25
   move: {fileID: 0}
   punch: {fileID: 0}
 --- !u!50 &8247011044227077457
