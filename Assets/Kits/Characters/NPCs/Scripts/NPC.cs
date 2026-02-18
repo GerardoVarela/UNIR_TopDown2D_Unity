@@ -1,8 +1,15 @@
 using System.Collections;
+using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.UI;
+
+[System.Serializable]
+public class DialogueGroup
+{
+    public string[] lines;
+}
 
 public class NPC : BaseCharacter
 {
@@ -16,11 +23,17 @@ public class NPC : BaseCharacter
     [SerializeField] TextMeshProUGUI dialogueText;
     [SerializeField] Image dialogueNPCImage;
     [SerializeField] TextMeshProUGUI dialogueNPCName;
-    [SerializeField] string[] dialogue;
+    [SerializeField] DialogueGroup[] dialogues;
     [SerializeField] float wordSpeed = 0.04f;
     [SerializeField] Transform playerPosition;
+    [Header("NPC Quest")]
+    [SerializeField] bool activateQuest;
+    [SerializeField] InventoryItemDefinition requiredItem;
+    [SerializeField] int requiredAmount = 3;
 
-    private int index;
+    private string[] dialogue;
+    private int dialogueIndex = 0;
+    private int lineIndex;
     private bool isTyping;
     private Coroutine typingCoroutine;
     private bool playerIsClose;
@@ -32,6 +45,7 @@ public class NPC : BaseCharacter
         dialogueNPCName.text = npcName;
         npcColor.a = 1f;
         dialogueNPCName.color = npcColor;
+        dialogue = dialogues[dialogueIndex].lines;
     }
 
     // Update is called once per frame
@@ -43,6 +57,7 @@ public class NPC : BaseCharacter
             {
                 // Hide hint and show dialogue
                 FacePlayer();
+                if (activateQuest) CheckQuest();
                 hintPanel.SetActive(false);
                 dialoguePanel.SetActive(true);
                 typingCoroutine = StartCoroutine(Typing());
@@ -51,7 +66,7 @@ public class NPC : BaseCharacter
             {
                 // If C Key was pressed while typing, end the line instantly
                 StopCoroutine(typingCoroutine);
-                dialogueText.text = dialogue[index];
+                dialogueText.text = dialogue[lineIndex];
                 isTyping = false;
             }
             else
@@ -79,7 +94,7 @@ public class NPC : BaseCharacter
     private void RemoveText()
     {
         dialogueText.text = "";
-        index = 0;
+        lineIndex = 0;
         dialoguePanel.SetActive(false);
     }
 
@@ -88,7 +103,7 @@ public class NPC : BaseCharacter
         isTyping = true;
         dialogueText.text = ""; 
 
-        foreach (char letter in dialogue[index].ToCharArray())
+        foreach (char letter in dialogue[lineIndex].ToCharArray())
         {
             if (!isTyping) break; // If C Key was pressed, the variable is updated in Update method
             dialogueText.text += letter;
@@ -99,9 +114,9 @@ public class NPC : BaseCharacter
 
     private void NextLine()
     {
-        if (index < dialogue.Length - 1)
+        if (lineIndex < dialogue.Length - 1)
         {
-            index++;
+            lineIndex++;
             dialogueText.text = "";
             StartCoroutine(Typing());
         }
@@ -136,5 +151,24 @@ public class NPC : BaseCharacter
             RemoveText();
             ResetFacingDirection();
         }
+    }
+
+
+    private void CheckQuest()
+    {
+        Inventory inventory = playerPosition.GetComponent<Inventory>();
+        if (inventory == null)
+            return;
+
+        List<InventoryItem> questItem = inventory.GetItems(requiredItem.uniqueItemName);
+
+        Debug.Log("questItem.Count");
+        Debug.Log(questItem.Count);
+
+        // if (questItem != null && questItem.quantity >= requiredAmount)
+        // {
+        //     inventory.RemoveItem(questItem, requiredAmount);
+        //     Destroy(gameObject);
+        // }   
     }
 }
