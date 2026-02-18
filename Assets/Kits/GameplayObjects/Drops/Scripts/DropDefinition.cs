@@ -1,8 +1,6 @@
 using UnityEngine;
 
 [CreateAssetMenu()]
-public class DropDefinition : ScriptableObject
+public class DropDefinition : ItemEffectDefinition
 {
-    public float healthRecovery;
-    public int bullets;
 }

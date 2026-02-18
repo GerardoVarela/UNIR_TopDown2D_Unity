@@ -102,7 +102,7 @@ public class PlayerCharacter : BaseCharacter
         Drop drop = other.GetComponent<Drop>();
         if (drop)
         {
-            life.RecoverHealth(drop.dropDefinition.healthRecovery);
+            ApplyItemEffect(drop.dropDefinition);
             drop.NotifyPickedUp();
         }
     }
