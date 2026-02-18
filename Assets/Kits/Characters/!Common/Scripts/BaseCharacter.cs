@@ -10,7 +10,7 @@ public class BaseCharacter : MonoBehaviour, IVisible2D
     [SerializeField] protected Life life;
 
     [Header("Directional Attack")]
-    [SerializeField] IVisible2D.Side[] sidesToAttrack = { IVisible2D.Side.PlayerFriends };
+    [SerializeField] IVisible2D.Side[] sidesToAttack = { IVisible2D.Side.PlayerFriends };
     [SerializeField] protected float attackRange = 1f;
     [SerializeField] protected float attackRadius = 0.3f;
     [SerializeField] protected float attackDamage = 0.2f;
@@ -100,7 +100,7 @@ public class BaseCharacter : MonoBehaviour, IVisible2D
 
                     bool canBeAttacked = false;
 
-                    foreach (var side in sidesToAttrack)
+                    foreach (var side in sidesToAttack)
                     {
                         if (side == otherSide)
                         {
