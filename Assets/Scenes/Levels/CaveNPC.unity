@@ -2119,6 +2119,7 @@ MonoBehaviour:
   onDeath:
     m_PersistentCalls:
       m_Calls: []
+  dropPrefab: {fileID: 0}
 --- !u!1 &302118907
 GameObject:
   m_ObjectHideFlags: 0
@@ -31312,6 +31313,14 @@ PrefabInstance:
       propertyPath: dialogueText
       value: 
       objectReference: {fileID: 2032129648}
+    - target: {fileID: 9154946001312572491, guid: 9a739f3767a46194cbdd0c95311ad6b0, type: 3}
+      propertyPath: requiredItem
+      value: 
+      objectReference: {fileID: 11400000, guid: bb1af407349e49d468fd5c81352997fa, type: 2}
+    - target: {fileID: 9154946001312572491, guid: 9a739f3767a46194cbdd0c95311ad6b0, type: 3}
+      propertyPath: activateQuest
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9154946001312572491, guid: 9a739f3767a46194cbdd0c95311ad6b0, type: 3}
       propertyPath: dialoguePanel
       value: 

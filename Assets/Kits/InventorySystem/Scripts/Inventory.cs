@@ -42,11 +42,6 @@ public class Inventory : MonoBehaviour
         return items.Find(x => x.uniqueItemName == uniqueName);
     }
 
-    public List<InventoryItem> GetItems(string uniqueName)
-    {
-        return items.FindAll(x => x.uniqueItemName == uniqueName);
-    }
-
     public void UseItem(InventoryItem item)
     {
         if (item == null || !items.Contains(item))

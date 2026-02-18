@@ -29,7 +29,7 @@ public class NPC : BaseCharacter
     [Header("NPC Quest")]
     [SerializeField] bool activateQuest;
     [SerializeField] InventoryItemDefinition requiredItem;
-    [SerializeField] int requiredAmount = 3;
+    [SerializeField] int requiredItemAmount = 3;
 
     private string[] dialogue;
     private int dialogueIndex = 0;
@@ -160,15 +160,30 @@ public class NPC : BaseCharacter
         if (inventory == null)
             return;
 
-        List<InventoryItem> questItem = inventory.GetItems(requiredItem.uniqueItemName);
+        List<InventoryItem> questItems = inventory.GetItems();
 
-        Debug.Log("questItem.Count");
-        Debug.Log(questItem.Count);
+        int amountPicked = 0;
 
-        // if (questItem != null && questItem.quantity >= requiredAmount)
-        // {
-        //     inventory.RemoveItem(questItem, requiredAmount);
-        //     Destroy(gameObject);
-        // }   
+        for (int i = 0; i < questItems.Count; i++)
+        {
+            if (questItems[i].uniqueItemName == requiredItem.uniqueItemName)
+            {
+                amountPicked++;   
+            }
+        }
+
+        if (amountPicked >= requiredItemAmount)
+        {
+            int itemsDeleted = 0;
+
+            for (int i = questItems.Count - 1; i >= 0 && itemsDeleted < requiredItemAmount; i--)
+            {
+                if (questItems[i].uniqueItemName == requiredItem.uniqueItemName)
+                {
+                    inventory.RemoveItem(questItems[i]);
+                    itemsDeleted++;
+                }
+            }
+        }   
     }
 }
