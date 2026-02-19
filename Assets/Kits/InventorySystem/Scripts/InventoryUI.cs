@@ -12,7 +12,7 @@ public class InventoryUI : MonoBehaviour
     [SerializeField] Inventory inventory;
     [SerializeField] GameObject inventoryItemPrefab;
     [SerializeField] GridLayoutGroup grid;
-    
+
 
     private void OnEnable()
     {

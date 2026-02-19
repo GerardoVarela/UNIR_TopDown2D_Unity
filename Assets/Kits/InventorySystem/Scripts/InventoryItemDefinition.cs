@@ -11,4 +11,5 @@ public class InventoryItemDefinition : ItemEffectDefinition
     public int numUses = 1;
     public bool usableInUI = true;
     public bool removableInUI = true;
+    public GameObject objectToSpawnOnUse;
 }

@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 5419117222324702220}
   - component: {fileID: 8866533460439102040}
   - component: {fileID: 4187958327864600965}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -114,11 +114,13 @@ MonoBehaviour:
   priority: 0
   side: 0
   life: {fileID: 8866533460439102040}
+  sidesToAttrack: 01000000
   attackRange: 0.24
   attackRadius: 0.11
   attackDamage: 0.2
   attackCooldown: 1
   directionalAttackSoundType: 1
+  stopMovingDelay: 0.25
   move: {fileID: 0}
   punch: {fileID: 0}
 --- !u!50 &8247011044227077457
@@ -229,6 +231,7 @@ MonoBehaviour:
   onDeath:
     m_PersistentCalls:
       m_Calls: []
+  dropPrefab: {fileID: 0}
 --- !u!114 &4187958327864600965
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -253,7 +256,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2889013560358431316}
   - component: {fileID: 5749892865014978104}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: FeetCollision
   m_TagString: Feet
   m_Icon: {fileID: 0}

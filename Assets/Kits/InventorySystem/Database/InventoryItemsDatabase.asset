@@ -15,3 +15,6 @@ MonoBehaviour:
   pickablePrefabs:
   - {fileID: 1235195508731939575, guid: f80008c1e346005469626beeeaaf91bd, type: 3}
   - {fileID: 4686305826622076981, guid: a2e7412dbb054564a851155c0662b935, type: 3}
+  - {fileID: 4299141423124794933, guid: 47d44250762a067458a7cc164cda8efe, type: 3}
+  - {fileID: 8158711240646524351, guid: 0e861ab2de335e54fb104db1f5496f06, type: 3}
+  - {fileID: 5023725758422853925, guid: bfce6fa4c68cbf946a67f9f17c074f2e, type: 3}

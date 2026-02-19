@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 5361509892053800631}
   - component: {fileID: 8728795053658206362}
   - component: {fileID: 6894892637128038590}
+  - component: {fileID: 5779187182073148309}
   m_Layer: 0
   m_Name: BlueOrc
   m_TagString: Untagged
@@ -134,8 +135,8 @@ MonoBehaviour:
   priority: 0
   side: 1
   life: {fileID: 0}
-  attackRange: 1
-  attackRadius: 0.3
+  attackRange: 0.25
+  attackRadius: 0.18
   attackDamage: 0.2
   attackCooldown: 3
   directionalAttackSoundType: 0
@@ -218,3 +219,26 @@ CapsuleCollider2D:
   m_Offset: {x: 0.042473618, y: 0.01820303}
   m_Size: {x: 0.29325595, y: 0.30539116}
   m_Direction: 0
+--- !u!114 &5779187182073148309
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7669841931648387458}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7166e611e3d8ea54cab28852c7ba4b14, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Life
+  startingLife: 1
+  debugHitDamage: 0.1
+  debugReceivedHit: 0
+  currentLife: 0
+  onLifeChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  onDeath:
+    m_PersistentCalls:
+      m_Calls: []
+  dropPrefab: {fileID: 8158711240646524351, guid: 0e861ab2de335e54fb104db1f5496f06, type: 3}
