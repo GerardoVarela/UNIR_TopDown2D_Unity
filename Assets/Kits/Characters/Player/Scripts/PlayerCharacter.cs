@@ -14,7 +14,7 @@ public class PlayerCharacter : BaseCharacter
         base.Awake();
 
         // Load player position from saved session if available
-        // LoadPlayerPosition();
+        LoadPlayerPosition();
     }
 
     private void LoadPlayerPosition()
