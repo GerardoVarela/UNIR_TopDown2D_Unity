@@ -30,6 +30,7 @@ public class NPC : BaseCharacter
     [SerializeField] bool activateQuest;
     [SerializeField] InventoryItemDefinition requiredItem;
     [SerializeField] int requiredItemAmount = 3;
+    [SerializeField] public GameObject dropPrefab;
 
     private string[] dialogue;
     private int dialogueIndex = 0;
@@ -37,6 +38,8 @@ public class NPC : BaseCharacter
     private bool isTyping;
     private Coroutine typingCoroutine;
     private bool playerIsClose;
+    private bool questCompleted = false;
+    private bool dropItemDelivered = false;
 
     void Start()
     {
@@ -57,7 +60,9 @@ public class NPC : BaseCharacter
             {
                 // Hide hint and show dialogue
                 FacePlayer();
-                if (activateQuest) CheckQuest();
+                if (activateQuest && !questCompleted) {
+                    CheckQuest();
+                }
                 hintPanel.SetActive(false);
                 dialoguePanel.SetActive(true);
                 typingCoroutine = StartCoroutine(Typing());
@@ -116,14 +121,27 @@ public class NPC : BaseCharacter
     {
         if (lineIndex < dialogue.Length - 1)
         {
-            lineIndex++;
+            if (!dropItemDelivered) lineIndex++;
             dialogueText.text = "";
             StartCoroutine(Typing());
         }
         else
         {
+            if (questCompleted && !dropItemDelivered) DeliverItem();
             RemoveText();
         }
+    }
+
+    private void DeliverItem()
+    {
+        float yOffset = 0.3f;
+        Vector3 dropPosition = new Vector3(transform.position.x, transform.position.y - yOffset, transform.position.z);
+        Instantiate(dropPrefab, dropPosition, Quaternion.identity);
+
+        dropItemDelivered = true;
+
+        dialogueIndex++;
+        dialogue = dialogues[dialogueIndex].lines;  
     }
 
     void OnTriggerEnter2D(Collider2D collision)
@@ -170,7 +188,7 @@ public class NPC : BaseCharacter
             {
                 amountPicked++;   
             }
-        }
+        }  
 
         if (amountPicked >= requiredItemAmount)
         {
@@ -184,6 +202,11 @@ public class NPC : BaseCharacter
                     itemsDeleted++;
                 }
             }
+
+            questCompleted = true;
+
+            dialogueIndex++;
+            dialogue = dialogues[dialogueIndex].lines;   
         }   
     }
 }

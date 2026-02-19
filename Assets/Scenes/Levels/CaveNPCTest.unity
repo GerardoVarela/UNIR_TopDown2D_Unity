@@ -790,11 +790,13 @@ MonoBehaviour:
   priority: 0
   side: 0
   life: {fileID: 0}
+  sidesToAttack: 00000000
   attackRange: 1
   attackRadius: 0.3
   attackDamage: 0.2
   attackCooldown: 1
   directionalAttackSoundType: 0
+  stopMovingDelay: 0.25
   move: {fileID: 763525692}
   punch: {fileID: 807459521}
 --- !u!212 &187235352
@@ -45273,6 +45275,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 308601573}
     - target: {fileID: 9154946001312572491, guid: 9a739f3767a46194cbdd0c95311ad6b0, type: 3}
+      propertyPath: dropPrefab
+      value: 
+      objectReference: {fileID: 4299141423124794933, guid: 47d44250762a067458a7cc164cda8efe, type: 3}
+    - target: {fileID: 9154946001312572491, guid: 9a739f3767a46194cbdd0c95311ad6b0, type: 3}
       propertyPath: npcColor.b
       value: 0.1882353
       objectReference: {fileID: 0}
@@ -45326,7 +45332,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9154946001312572491, guid: 9a739f3767a46194cbdd0c95311ad6b0, type: 3}
       propertyPath: dialogues.Array.size
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 9154946001312572491, guid: 9a739f3767a46194cbdd0c95311ad6b0, type: 3}
       propertyPath: 'dialogue.Array.data[0]'
@@ -45351,6 +45357,10 @@ PrefabInstance:
     - target: {fileID: 9154946001312572491, guid: 9a739f3767a46194cbdd0c95311ad6b0, type: 3}
       propertyPath: dialogues.Array.data[1].lines.Array.size
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 9154946001312572491, guid: 9a739f3767a46194cbdd0c95311ad6b0, type: 3}
+      propertyPath: dialogues.Array.data[2].lines.Array.size
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9154946001312572491, guid: 9a739f3767a46194cbdd0c95311ad6b0, type: 3}
       propertyPath: 'dialogues.Array.data[0].lines.Array.data[0]'
@@ -45383,6 +45393,18 @@ PrefabInstance:
     - target: {fileID: 9154946001312572491, guid: 9a739f3767a46194cbdd0c95311ad6b0, type: 3}
       propertyPath: 'dialogues.Array.data[1].lines.Array.data[3]'
       value: "Tr\xE1eme 3 esqueletos de orco y te dar\xE9 la llave."
+      objectReference: {fileID: 0}
+    - target: {fileID: 9154946001312572491, guid: 9a739f3767a46194cbdd0c95311ad6b0, type: 3}
+      propertyPath: 'dialogues.Array.data[2].lines.Array.data[0]'
+      value: "\xA1Muchas gracias, guerrero!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 9154946001312572491, guid: 9a739f3767a46194cbdd0c95311ad6b0, type: 3}
+      propertyPath: 'dialogues.Array.data[2].lines.Array.data[1]'
+      value: "Aqu\xED tienes la llave de la puerta..."
+      objectReference: {fileID: 0}
+    - target: {fileID: 9154946001312572491, guid: 9a739f3767a46194cbdd0c95311ad6b0, type: 3}
+      propertyPath: 'dialogues.Array.data[2].lines.Array.data[2]'
+      value: "\xA1Muchas gracias!"
       objectReference: {fileID: 0}
     - target: {fileID: 9194667603022053446, guid: 9a739f3767a46194cbdd0c95311ad6b0, type: 3}
       propertyPath: m_LocalPosition.x
@@ -45513,11 +45535,13 @@ MonoBehaviour:
   priority: 0
   side: 1
   life: {fileID: 1951863856}
+  sidesToAttack: 00000000
   attackRange: 0.2
   attackRadius: 0.18
   attackDamage: 0.2
   attackCooldown: 2
   directionalAttackSoundType: 2
+  stopMovingDelay: 0.25
 --- !u!50 &1951863859
 Rigidbody2D:
   serializedVersion: 5
@@ -46241,11 +46265,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7264193643557296294, guid: 47d44250762a067458a7cc164cda8efe, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.168
+      value: -0.05
       objectReference: {fileID: 0}
     - target: {fileID: 7264193643557296294, guid: 47d44250762a067458a7cc164cda8efe, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.11
+      value: -2.241
       objectReference: {fileID: 0}
     - target: {fileID: 7264193643557296294, guid: 47d44250762a067458a7cc164cda8efe, type: 3}
       propertyPath: m_LocalPosition.z
