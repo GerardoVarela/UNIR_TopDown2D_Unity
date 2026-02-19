@@ -11,22 +11,18 @@ public enum UIClipType
 public enum SFXType
 {
     Undefined,
-    PlayerSttack1,
-    PickUpCoin,
+    PlayerAttack1,
     VampireAttack1,
-    VampireReceiveDamage,
-    VampireDeath,
 }
 
 public enum MusicType
 {
     Undefined,
-    MainMenu,
-    Intro,
-    Forest,
-    Castle,
-
-
+    TitleTheme,
+    WelcomeToTown,
+    TheIcyCave,
+    IntoTheDungeon,
+    DecisiveBattle,
 }
 
 [Serializable]
@@ -49,13 +45,25 @@ public struct MusicClipData
     public MusicType type;
     public AudioClip clip;
 }
+
+[Serializable]
+public struct LevelMusicData
+{
+    public Level level;
+    public MusicType music;
+}
+
+
 [CreateAssetMenu(fileName = "SoundDatabase", menuName = "Scriptable Objects/SoundDatabase")]
 public class SoundDatabase : ScriptableObject
 {
     [Header("UI Sounds")]
-    private UIClipData[] uiClipList = default;
-    private SFXClipData[] sfxClipList = default;
-    private MusicClipData[] musicClipList = default;
+    [SerializeField] private UIClipData[] uiClipList = default;
+    [SerializeField] private SFXClipData[] sfxClipList = default;
+    [SerializeField] private MusicClipData[] musicClipList = default;
+
+    [Header("Level Music Mapping")]
+    [SerializeField] private LevelMusicData[] levelMusicList = default;
 
     public AudioClip GetUIClip(UIClipType type)
     {
@@ -107,4 +115,17 @@ public class SoundDatabase : ScriptableObject
         Debug.LogWarning($"Music Clip not found for type: {type}");
         return null;
     }
+
+    public MusicType GetMusicForLevel(Level level)
+    {
+        foreach (LevelMusicData data in levelMusicList)
+        {
+            if (data.level == level)
+                return data.music;
+        }
+
+        Debug.LogWarning($"Music not mapped for level: {level}");
+        return MusicType.Undefined;
+    }
+
 }

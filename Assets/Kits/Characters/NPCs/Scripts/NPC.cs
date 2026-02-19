@@ -1,0 +1,212 @@
+using System.Collections;
+using System.Collections.Generic;
+using TMPro;
+using UnityEngine;
+using UnityEngine.InputSystem;
+using UnityEngine.UI;
+
+[System.Serializable]
+public class DialogueGroup
+{
+    public string[] lines;
+}
+
+public class NPC : BaseCharacter
+{
+    [Header("NPC Info")]
+    [SerializeField] string npcName;
+    [SerializeField] Color npcColor;
+    [SerializeField] Sprite npcProfilePIC;
+    [Header("NPC Dialogue")]
+    [SerializeField] GameObject dialoguePanel;
+    [SerializeField] GameObject hintPanel;
+    [SerializeField] TextMeshProUGUI dialogueText;
+    [SerializeField] Image dialogueNPCImage;
+    [SerializeField] TextMeshProUGUI dialogueNPCName;
+    [SerializeField] DialogueGroup[] dialogues;
+    [SerializeField] float wordSpeed = 0.04f;
+    [SerializeField] Transform playerPosition;
+    [Header("NPC Quest")]
+    [SerializeField] bool activateQuest;
+    [SerializeField] InventoryItemDefinition requiredItem;
+    [SerializeField] int requiredItemAmount = 3;
+    [SerializeField] public GameObject dropPrefab;
+
+    private string[] dialogue;
+    private int dialogueIndex = 0;
+    private int lineIndex;
+    private bool isTyping;
+    private Coroutine typingCoroutine;
+    private bool playerIsClose;
+    private bool questCompleted = false;
+    private bool dropItemDelivered = false;
+
+    void Start()
+    {
+        dialogueText.text = "";
+        dialogueNPCImage.sprite = npcProfilePIC;
+        dialogueNPCName.text = npcName;
+        npcColor.a = 1f;
+        dialogueNPCName.color = npcColor;
+        dialogue = dialogues[dialogueIndex].lines;
+    }
+
+    // Update is called once per frame
+    protected override void Update()
+    {
+        if (Keyboard.current.cKey.wasPressedThisFrame && playerIsClose)
+        {
+            if (!dialoguePanel.activeInHierarchy)
+            {
+                // Hide hint and show dialogue
+                FacePlayer();
+                if (activateQuest && !questCompleted) {
+                    CheckQuest();
+                }
+                hintPanel.SetActive(false);
+                dialoguePanel.SetActive(true);
+                typingCoroutine = StartCoroutine(Typing());
+            }
+            else if (isTyping)
+            {
+                // If C Key was pressed while typing, end the line instantly
+                StopCoroutine(typingCoroutine);
+                dialogueText.text = dialogue[lineIndex];
+                isTyping = false;
+            }
+            else
+            {
+                NextLine();
+            }
+        }
+
+        base.Update();
+    }
+
+    private void FacePlayer()
+    {
+        Vector2 facingDirection = (playerPosition.transform.position - transform.position).normalized;
+        Move(facingDirection);
+    }
+
+    private Vector2 initialFacingDirection = new Vector2(0,0);
+    private void ResetFacingDirection()
+    {
+        Vector2 facingDirection = initialFacingDirection;
+        Move(facingDirection);
+    }
+
+    private void RemoveText()
+    {
+        dialogueText.text = "";
+        lineIndex = 0;
+        dialoguePanel.SetActive(false);
+    }
+
+    private IEnumerator Typing()
+    {
+        isTyping = true;
+        dialogueText.text = ""; 
+
+        foreach (char letter in dialogue[lineIndex].ToCharArray())
+        {
+            if (!isTyping) break; // If C Key was pressed, the variable is updated in Update method
+            dialogueText.text += letter;
+            yield return new WaitForSeconds(wordSpeed);
+        }
+        isTyping = false;
+    }
+
+    private void NextLine()
+    {
+        if (lineIndex < dialogue.Length - 1)
+        {
+            if (!dropItemDelivered) lineIndex++;
+            dialogueText.text = "";
+            StartCoroutine(Typing());
+        }
+        else
+        {
+            if (questCompleted && !dropItemDelivered) DeliverItem();
+            RemoveText();
+        }
+    }
+
+    private void DeliverItem()
+    {
+        float yOffset = 0.3f;
+        Vector3 dropPosition = new Vector3(transform.position.x, transform.position.y - yOffset, transform.position.z);
+        Instantiate(dropPrefab, dropPosition, Quaternion.identity);
+
+        dropItemDelivered = true;
+
+        dialogueIndex++;
+        dialogue = dialogues[dialogueIndex].lines;  
+    }
+
+    void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Player"))
+        {
+            playerIsClose = true;
+            hintPanel.SetActive(true);
+        }
+    }
+
+    void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Player"))
+        {
+            playerIsClose = false;
+            hintPanel.SetActive(false);
+
+            if (typingCoroutine != null)
+            {
+                StopCoroutine(typingCoroutine);
+                typingCoroutine = null;
+            }
+
+            RemoveText();
+            ResetFacingDirection();
+        }
+    }
+
+
+    private void CheckQuest()
+    {
+        Inventory inventory = playerPosition.GetComponent<Inventory>();
+        if (inventory == null)
+            return;
+
+        List<InventoryItem> questItems = inventory.GetItems();
+
+        int amountPicked = 0;
+
+        for (int i = 0; i < questItems.Count; i++)
+        {
+            if (questItems[i].uniqueItemName == requiredItem.uniqueItemName)
+            {
+                amountPicked++;   
+            }
+        }  
+
+        if (amountPicked >= requiredItemAmount)
+        {
+            int itemsDeleted = 0;
+
+            for (int i = questItems.Count - 1; i >= 0 && itemsDeleted < requiredItemAmount; i--)
+            {
+                if (questItems[i].uniqueItemName == requiredItem.uniqueItemName)
+                {
+                    inventory.RemoveItem(questItems[i]);
+                    itemsDeleted++;
+                }
+            }
+
+            questCompleted = true;
+
+            dialogueIndex++;
+            dialogue = dialogues[dialogueIndex].lines;   
+        }   
+    }
+}

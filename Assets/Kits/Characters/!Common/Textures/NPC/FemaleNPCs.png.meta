@@ -1,0 +1,2628 @@
+fileFormatVersion: 2
+guid: b5be69b4e7d891c468311581a006d833
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6751478470843567126
+    second: FemaleNPCs_0
+  - first:
+      213: 4461640388706028092
+    second: FemaleNPCs_1
+  - first:
+      213: 3902355329228789748
+    second: FemaleNPCs_2
+  - first:
+      213: -2365619611523759835
+    second: FemaleNPCs_3
+  - first:
+      213: -8802619742140910224
+    second: FemaleNPCs_4
+  - first:
+      213: 3862542594896698562
+    second: FemaleNPCs_5
+  - first:
+      213: 2984700478560532818
+    second: FemaleNPCs_6
+  - first:
+      213: -3903869270255238628
+    second: FemaleNPCs_7
+  - first:
+      213: -4329508753093342471
+    second: FemaleNPCs_8
+  - first:
+      213: -8731799995040513304
+    second: FemaleNPCs_9
+  - first:
+      213: 1964374418120199728
+    second: FemaleNPCs_10
+  - first:
+      213: -2000242388243128343
+    second: FemaleNPCs_11
+  - first:
+      213: 8645854499493132327
+    second: FemaleNPCs_12
+  - first:
+      213: 2844915930919420694
+    second: FemaleNPCs_13
+  - first:
+      213: -1505462159235351720
+    second: FemaleNPCs_14
+  - first:
+      213: -5912178893282268553
+    second: FemaleNPCs_15
+  - first:
+      213: -8369320846368386250
+    second: FemaleNPCs_16
+  - first:
+      213: 458708139744084061
+    second: FemaleNPCs_17
+  - first:
+      213: -1976538016302810844
+    second: FemaleNPCs_18
+  - first:
+      213: 2601615974891215283
+    second: FemaleNPCs_19
+  - first:
+      213: 8458299051730089590
+    second: FemaleNPCs_20
+  - first:
+      213: 1447937075674963284
+    second: FemaleNPCs_21
+  - first:
+      213: 6428249284915869575
+    second: FemaleNPCs_22
+  - first:
+      213: 4155590531182184458
+    second: FemaleNPCs_23
+  - first:
+      213: 3454309987896297995
+    second: FemaleNPCs_24
+  - first:
+      213: -4941879750865525728
+    second: FemaleNPCs_25
+  - first:
+      213: -3362545975522454963
+    second: FemaleNPCs_26
+  - first:
+      213: 1622578313125877106
+    second: FemaleNPCs_27
+  - first:
+      213: -7167907048338190261
+    second: FemaleNPCs_28
+  - first:
+      213: -3505655856511284911
+    second: FemaleNPCs_29
+  - first:
+      213: 8441296228278742443
+    second: FemaleNPCs_30
+  - first:
+      213: -948388527799826186
+    second: FemaleNPCs_31
+  - first:
+      213: -392927933191830136
+    second: FemaleNPCs_32
+  - first:
+      213: -674170684918922123
+    second: FemaleNPCs_33
+  - first:
+      213: 5341024078845538624
+    second: FemaleNPCs_34
+  - first:
+      213: -2609218493198770441
+    second: FemaleNPCs_35
+  - first:
+      213: 6175150193597508623
+    second: FemaleNPCs_36
+  - first:
+      213: 6655766384790407646
+    second: FemaleNPCs_37
+  - first:
+      213: 779992392143457045
+    second: FemaleNPCs_38
+  - first:
+      213: -2349594160437394846
+    second: FemaleNPCs_39
+  - first:
+      213: -2331115039131392428
+    second: FemaleNPCs_40
+  - first:
+      213: -132469009838720766
+    second: FemaleNPCs_41
+  - first:
+      213: -3289277199215916005
+    second: FemaleNPCs_42
+  - first:
+      213: -4701069074057108994
+    second: FemaleNPCs_43
+  - first:
+      213: 8772612431320130597
+    second: FemaleNPCs_44
+  - first:
+      213: 6552438688650434693
+    second: FemaleNPCs_45
+  - first:
+      213: 895295871555469515
+    second: FemaleNPCs_46
+  - first:
+      213: -4603614502496118251
+    second: FemaleNPCs_47
+  - first:
+      213: 8098114961109005214
+    second: FemaleNPCs_48
+  - first:
+      213: -5765280777931230407
+    second: FemaleNPCs_49
+  - first:
+      213: -6377575997296133354
+    second: FemaleNPCs_50
+  - first:
+      213: 637603096408565906
+    second: FemaleNPCs_51
+  - first:
+      213: 2777314411898901240
+    second: FemaleNPCs_52
+  - first:
+      213: 5964557614257747862
+    second: FemaleNPCs_53
+  - first:
+      213: 6710167033310527379
+    second: FemaleNPCs_54
+  - first:
+      213: -5151766782246786145
+    second: FemaleNPCs_55
+  - first:
+      213: -306334506572774232
+    second: FemaleNPCs_56
+  - first:
+      213: 2560745538627811197
+    second: FemaleNPCs_57
+  - first:
+      213: 3635750285260466902
+    second: FemaleNPCs_58
+  - first:
+      213: -6812614451203042440
+    second: FemaleNPCs_59
+  - first:
+      213: 1888714135183327779
+    second: FemaleNPCs_60
+  - first:
+      213: -7631484952770266687
+    second: FemaleNPCs_61
+  - first:
+      213: -8595160585174403172
+    second: FemaleNPCs_62
+  - first:
+      213: -1357433989324979639
+    second: FemaleNPCs_63
+  - first:
+      213: -4023693287041540104
+    second: FemaleNPCs_64
+  - first:
+      213: -2767108368584709920
+    second: FemaleNPCs_65
+  - first:
+      213: -5513994929289622348
+    second: FemaleNPCs_66
+  - first:
+      213: -7549223479239222097
+    second: FemaleNPCs_67
+  - first:
+      213: 7068267009692672173
+    second: FemaleNPCs_68
+  - first:
+      213: 5598153401432215454
+    second: FemaleNPCs_69
+  - first:
+      213: -8377351799866213811
+    second: FemaleNPCs_70
+  - first:
+      213: -8418152362875328983
+    second: FemaleNPCs_71
+  - first:
+      213: -3020500742520950030
+    second: FemaleNPCs_72
+  - first:
+      213: 1064032026091497102
+    second: FemaleNPCs_73
+  - first:
+      213: 3627272652013798829
+    second: FemaleNPCs_74
+  - first:
+      213: 1298902230840500955
+    second: FemaleNPCs_75
+  - first:
+      213: -5915631109856783946
+    second: FemaleNPCs_76
+  - first:
+      213: -146479458762750322
+    second: FemaleNPCs_77
+  - first:
+      213: -7000366067414163036
+    second: FemaleNPCs_78
+  - first:
+      213: -572612814962680770
+    second: FemaleNPCs_79
+  - first:
+      213: 3077399488184623707
+    second: FemaleNPCs_80
+  - first:
+      213: -2936640312918953987
+    second: FemaleNPCs_81
+  - first:
+      213: 2863706609828834528
+    second: FemaleNPCs_82
+  - first:
+      213: -2982306313488883973
+    second: FemaleNPCs_83
+  - first:
+      213: 3026134204838532870
+    second: FemaleNPCs_84
+  - first:
+      213: -5534709057564946802
+    second: FemaleNPCs_85
+  - first:
+      213: 8647370392799772936
+    second: FemaleNPCs_86
+  - first:
+      213: -1018364903923318394
+    second: FemaleNPCs_87
+  - first:
+      213: -7325266571756412005
+    second: FemaleNPCs_88
+  - first:
+      213: -4793692015326385288
+    second: FemaleNPCs_89
+  - first:
+      213: -5339586989809108006
+    second: FemaleNPCs_90
+  - first:
+      213: 5556704873696335371
+    second: FemaleNPCs_91
+  - first:
+      213: -8548436426644584131
+    second: FemaleNPCs_92
+  - first:
+      213: 3287290524962589214
+    second: FemaleNPCs_93
+  - first:
+      213: -2893884998801659710
+    second: FemaleNPCs_94
+  - first:
+      213: 7487094241275993840
+    second: FemaleNPCs_95
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: FemaleNPCs_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 528
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61c045bf5e112bd50800000000000000
+      internalID: 6751478470843567126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FemaleNPCs_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 528
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3acb547b4eeaed30800000000000000
+      internalID: 4461640388706028092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FemaleNPCs_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 528
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f7d8021f73f72630800000000000000
+      internalID: 3902355329228789748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FemaleNPCs_3
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 528
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 521cd653f71ab2fd0800000000000000
+      internalID: -2365619611523759835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FemaleNPCs_4
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 528
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 075b9d89bffc6d580800000000000000
+      internalID: -8802619742140910224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FemaleNPCs_5
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 528
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2cc12a286028a9530800000000000000
+      internalID: 3862542594896698562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FemaleNPCs_6
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 528
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 259f9898549cb6920800000000000000
+      internalID: 2984700478560532818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FemaleNPCs_7
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 528
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c128fd0159ba2d9c0800000000000000
+      internalID: -3903869270255238628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FemaleNPCs_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 480
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9fa4def4abe7ae3c0800000000000000
+      internalID: -4329508753093342471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FemaleNPCs_9
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 480
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e24ad5ea2a62d680800000000000000
+      internalID: -8731799995040513304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FemaleNPCs_10
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 480
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03e4be5202cd24b10800000000000000
+      internalID: 1964374418120199728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FemaleNPCs_11
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 480
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9efd6184526bd34e0800000000000000
+      internalID: -2000242388243128343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FemaleNPCs_12
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 480
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 728300e0cde3cf770800000000000000
+      internalID: 8645854499493132327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FemaleNPCs_13
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 480
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6134d4657fb2b7720800000000000000
+      internalID: 2844915930919420694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FemaleNPCs_14
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 480
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85bfbf774268b1be0800000000000000
+      internalID: -1505462159235351720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FemaleNPCs_15
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 480
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77a2951ee98b3fda0800000000000000
+      internalID: -5912178893282268553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FemaleNPCs_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 432
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 633d0f468033adb80800000000000000
+      internalID: -8369320846368386250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FemaleNPCs_17
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 432
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d50c60d6f98ad5600800000000000000
+      internalID: 458708139744084061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FemaleNPCs_18
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 432
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4293735752de194e0800000000000000
+      internalID: -1976538016302810844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FemaleNPCs_19
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 432
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b95f59f1fbca1420800000000000000
+      internalID: 2601615974891215283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FemaleNPCs_20
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 432
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 676356e6c2ae16570800000000000000
+      internalID: 8458299051730089590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FemaleNPCs_21
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 432
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45d59bc491b181410800000000000000
+      internalID: 1447937075674963284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FemaleNPCs_22
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 432
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 787b1139aaab53950800000000000000
+      internalID: 6428249284915869575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FemaleNPCs_23
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 432
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a084713229f9ba930800000000000000
+      internalID: 4155590531182184458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FemaleNPCs_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 384
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0a84acd1ac20ff20800000000000000
+      internalID: 3454309987896297995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FemaleNPCs_25
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 384
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 024e6febc8aea6bb0800000000000000
+      internalID: -4941879750865525728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FemaleNPCs_26
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 384
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4290143046d551d0800000000000000
+      internalID: -3362545975522454963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FemaleNPCs_27
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 384
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 275de16016e848610800000000000000
+      internalID: 1622578313125877106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FemaleNPCs_28
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 384
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4098c8448a768c90800000000000000
+      internalID: -7167907048338190261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FemaleNPCs_29
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 384
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15980ef7298695fc0800000000000000
+      internalID: -3505655856511284911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FemaleNPCs_30
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 384
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bad266a1232852570800000000000000
+      internalID: 8441296228278742443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FemaleNPCs_31
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 384
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f88f63a8a5a6d2f0800000000000000
+      internalID: -948388527799826186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FemaleNPCs_32
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 336
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 885c5c7602a0c8af0800000000000000
+      internalID: -392927933191830136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FemaleNPCs_33
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 336
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5740d6f755dd4a6f0800000000000000
+      internalID: -674170684918922123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FemaleNPCs_34
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 336
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 041756c0a112f1a40800000000000000
+      internalID: 5341024078845538624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FemaleNPCs_35
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 336
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7fed18bca913acbd0800000000000000
+      internalID: -2609218493198770441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FemaleNPCs_36
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 336
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0c601c326a82b550800000000000000
+      internalID: 6175150193597508623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FemaleNPCs_37
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 336
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed90b6163480e5c50800000000000000
+      internalID: 6655766384790407646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FemaleNPCs_38
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 336
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51bc735b2f613da00800000000000000
+      internalID: 779992392143457045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FemaleNPCs_39
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 336
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2620ccc4f80946fd0800000000000000
+      internalID: -2349594160437394846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FemaleNPCs_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 288
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 456a002093736afd0800000000000000
+      internalID: -2331115039131392428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FemaleNPCs_41
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 288
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 209b0dc2320692ef0800000000000000
+      internalID: -132469009838720766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FemaleNPCs_42
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 288
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1c81fc80d32a52d0800000000000000
+      internalID: -3289277199215916005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FemaleNPCs_43
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 288
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef16040a59272ceb0800000000000000
+      internalID: -4701069074057108994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FemaleNPCs_44
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 288
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5242309e6849eb970800000000000000
+      internalID: 8772612431320130597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FemaleNPCs_45
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 288
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58819816540feea50800000000000000
+      internalID: 6552438688650434693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FemaleNPCs_46
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 288
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc000f80adabc6c00800000000000000
+      internalID: 895295871555469515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FemaleNPCs_47
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 288
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51ad1ef300dac10c0800000000000000
+      internalID: -4603614502496118251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FemaleNPCs_48
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 240
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e93bd27c6a8426070800000000000000
+      internalID: 8098114961109005214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FemaleNPCs_49
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 240
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9337501adab9dffa0800000000000000
+      internalID: -5765280777931230407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FemaleNPCs_50
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 240
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61b3b199b6c4e77a0800000000000000
+      internalID: -6377575997296133354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FemaleNPCs_51
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 240
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2982f1553a839d800800000000000000
+      internalID: 637603096408565906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FemaleNPCs_52
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 240
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f29ec62eb00b8620800000000000000
+      internalID: 2777314411898901240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FemaleNPCs_53
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 240
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6973f207c8d56c250800000000000000
+      internalID: 5964557614257747862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FemaleNPCs_54
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 240
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39fb2046d5d4f1d50800000000000000
+      internalID: 6710167033310527379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FemaleNPCs_55
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 240
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9be582286f3188b0800000000000000
+      internalID: -5151766782246786145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FemaleNPCs_56
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 192
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a40949a36eafbbf0800000000000000
+      internalID: -306334506572774232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FemaleNPCs_57
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 192
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d77b31eff78998320800000000000000
+      internalID: 2560745538627811197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FemaleNPCs_58
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 192
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6daa9f41f97c47230800000000000000
+      internalID: 3635750285260466902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FemaleNPCs_59
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 192
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 873995c504bb471a0800000000000000
+      internalID: -6812614451203042440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FemaleNPCs_60
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 192
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3228cd5cf7f063a10800000000000000
+      internalID: 1888714135183327779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FemaleNPCs_61
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 192
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c9b3696ed4871690800000000000000
+      internalID: -7631484952770266687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FemaleNPCs_62
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 192
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c97bd35acfad7b880800000000000000
+      internalID: -8595160585174403172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FemaleNPCs_63
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 192
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9424e3c8afc692de0800000000000000
+      internalID: -1357433989324979639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FemaleNPCs_64
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 144
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ffd3cc1648f828c0800000000000000
+      internalID: -4023693287041540104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FemaleNPCs_65
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 144
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e86f7b79914999d0800000000000000
+      internalID: -2767108368584709920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FemaleNPCs_66
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 144
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4bc036283da5a73b0800000000000000
+      internalID: -5513994929289622348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FemaleNPCs_67
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 144
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fac58ed3e35cb3790800000000000000
+      internalID: -7549223479239222097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FemaleNPCs_68
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 144
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da028526567871260800000000000000
+      internalID: 7068267009692672173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FemaleNPCs_69
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 144
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9f038abbd2a0bd40800000000000000
+      internalID: 5598153401432215454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FemaleNPCs_70
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 144
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4abe725ceaadbb80800000000000000
+      internalID: -8377351799866213811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FemaleNPCs_71
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 144
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92663b9f607bc2b80800000000000000
+      internalID: -8418152362875328983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrownLadyIdleLeft_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 96
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f23c36f3960516d0800000000000000
+      internalID: -3020500742520950030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrownLadyIdleLeft_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 96
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e86a2d08d7334ce00800000000000000
+      internalID: 1064032026091497102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrownLadyIdleLeft_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 96
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da585c64249a65230800000000000000
+      internalID: 3627272652013798829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrownLadyIdleLeft_3
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 96
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd2e53372b0a60210800000000000000
+      internalID: 1298902230840500955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrownLadyWalkLeft_0
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 96
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b19cb219d477eda0800000000000000
+      internalID: -5915631109856783946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrownLadyWalkLeft_1
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 96
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e860e8555b997fdf0800000000000000
+      internalID: -146479458762750322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrownLadyWalkLeft_2
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 96
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a1a416b624b9de90800000000000000
+      internalID: -7000366067414163036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrownLadyWalkLeft_3
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 96
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3c105abdabad08f0800000000000000
+      internalID: -572612814962680770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrownLadyIdleForward_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 48
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b52a63d978e15ba20800000000000000
+      internalID: 3077399488184623707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrownLadyIdleForward_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 48
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dffaf53c135fe37d0800000000000000
+      internalID: -2936640312918953987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrownLadyIdleForward_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 48
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ec29c33dfdedb720800000000000000
+      internalID: 2863706609828834528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrownLadyIdleForward_3
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 48
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bfe17157538bc96d0800000000000000
+      internalID: -2982306313488883973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrownLadyWalkForward_0
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 48
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6075f02b60dfef920800000000000000
+      internalID: 3026134204838532870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrownLadyWalkForward_1
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 48
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8e44b0bf63c033b0800000000000000
+      internalID: -5534709057564946802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrownLadyWalkForward_2
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 48
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8018f087e81a10870800000000000000
+      internalID: 8647370392799772936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrownLadyWalkForward_3
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 48
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6810de1f38a0ed1f0800000000000000
+      internalID: -1018364903923318394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrownLadyIdleBackward_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b936a692ddc675a90800000000000000
+      internalID: -7325266571756412005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrownLadyIdleBackward_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87b28d79282697db0800000000000000
+      internalID: -4793692015326385288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrownLadyIdleBackward_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: adb71215ce9f5e5b0800000000000000
+      internalID: -5339586989809108006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrownLadyIdleBackward_3
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b061a5654a16d1d40800000000000000
+      internalID: 5556704873696335371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrownLadyWalkBackward_0
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3907dc8c5add5980800000000000000
+      internalID: -8548436426644584131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrownLadyWalkBackward_1
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 0
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1a07edc05dce9d20800000000000000
+      internalID: 3287290524962589214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrownLadyWalkBackward_2
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c868911dead6d7d0800000000000000
+      internalID: -2893884998801659710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrownLadyWalkBackward_3
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 0
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0fed02b4b8087e760800000000000000
+      internalID: 7487094241275993840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: dc4865f0e20a3584c86842f06acc4b69
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":32.0,"y":48.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      BrownLadyIdleBackward_0: -7325266571756412005
+      BrownLadyIdleBackward_1: -4793692015326385288
+      BrownLadyIdleBackward_2: -5339586989809108006
+      BrownLadyIdleBackward_3: 5556704873696335371
+      BrownLadyIdleForward_0: 3077399488184623707
+      BrownLadyIdleForward_1: -2936640312918953987
+      BrownLadyIdleForward_2: 2863706609828834528
+      BrownLadyIdleForward_3: -2982306313488883973
+      BrownLadyIdleLeft_0: -3020500742520950030
+      BrownLadyIdleLeft_1: 1064032026091497102
+      BrownLadyIdleLeft_2: 3627272652013798829
+      BrownLadyIdleLeft_3: 1298902230840500955
+      BrownLadyWalkBackward_0: -8548436426644584131
+      BrownLadyWalkBackward_1: 3287290524962589214
+      BrownLadyWalkBackward_2: -2893884998801659710
+      BrownLadyWalkBackward_3: 7487094241275993840
+      BrownLadyWalkForward_0: 3026134204838532870
+      BrownLadyWalkForward_1: -5534709057564946802
+      BrownLadyWalkForward_2: 8647370392799772936
+      BrownLadyWalkForward_3: -1018364903923318394
+      BrownLadyWalkLeft_0: -5915631109856783946
+      BrownLadyWalkLeft_1: -146479458762750322
+      BrownLadyWalkLeft_2: -7000366067414163036
+      BrownLadyWalkLeft_3: -572612814962680770
+      FemaleNPCs_0: 6751478470843567126
+      FemaleNPCs_1: 4461640388706028092
+      FemaleNPCs_10: 1964374418120199728
+      FemaleNPCs_11: -2000242388243128343
+      FemaleNPCs_12: 8645854499493132327
+      FemaleNPCs_13: 2844915930919420694
+      FemaleNPCs_14: -1505462159235351720
+      FemaleNPCs_15: -5912178893282268553
+      FemaleNPCs_16: -8369320846368386250
+      FemaleNPCs_17: 458708139744084061
+      FemaleNPCs_18: -1976538016302810844
+      FemaleNPCs_19: 2601615974891215283
+      FemaleNPCs_2: 3902355329228789748
+      FemaleNPCs_20: 8458299051730089590
+      FemaleNPCs_21: 1447937075674963284
+      FemaleNPCs_22: 6428249284915869575
+      FemaleNPCs_23: 4155590531182184458
+      FemaleNPCs_24: 3454309987896297995
+      FemaleNPCs_25: -4941879750865525728
+      FemaleNPCs_26: -3362545975522454963
+      FemaleNPCs_27: 1622578313125877106
+      FemaleNPCs_28: -7167907048338190261
+      FemaleNPCs_29: -3505655856511284911
+      FemaleNPCs_3: -2365619611523759835
+      FemaleNPCs_30: 8441296228278742443
+      FemaleNPCs_31: -948388527799826186
+      FemaleNPCs_32: -392927933191830136
+      FemaleNPCs_33: -674170684918922123
+      FemaleNPCs_34: 5341024078845538624
+      FemaleNPCs_35: -2609218493198770441
+      FemaleNPCs_36: 6175150193597508623
+      FemaleNPCs_37: 6655766384790407646
+      FemaleNPCs_38: 779992392143457045
+      FemaleNPCs_39: -2349594160437394846
+      FemaleNPCs_4: -8802619742140910224
+      FemaleNPCs_40: -2331115039131392428
+      FemaleNPCs_41: -132469009838720766
+      FemaleNPCs_42: -3289277199215916005
+      FemaleNPCs_43: -4701069074057108994
+      FemaleNPCs_44: 8772612431320130597
+      FemaleNPCs_45: 6552438688650434693
+      FemaleNPCs_46: 895295871555469515
+      FemaleNPCs_47: -4603614502496118251
+      FemaleNPCs_48: 8098114961109005214
+      FemaleNPCs_49: -5765280777931230407
+      FemaleNPCs_5: 3862542594896698562
+      FemaleNPCs_50: -6377575997296133354
+      FemaleNPCs_51: 637603096408565906
+      FemaleNPCs_52: 2777314411898901240
+      FemaleNPCs_53: 5964557614257747862
+      FemaleNPCs_54: 6710167033310527379
+      FemaleNPCs_55: -5151766782246786145
+      FemaleNPCs_56: -306334506572774232
+      FemaleNPCs_57: 2560745538627811197
+      FemaleNPCs_58: 3635750285260466902
+      FemaleNPCs_59: -6812614451203042440
+      FemaleNPCs_6: 2984700478560532818
+      FemaleNPCs_60: 1888714135183327779
+      FemaleNPCs_61: -7631484952770266687
+      FemaleNPCs_62: -8595160585174403172
+      FemaleNPCs_63: -1357433989324979639
+      FemaleNPCs_64: -4023693287041540104
+      FemaleNPCs_65: -2767108368584709920
+      FemaleNPCs_66: -5513994929289622348
+      FemaleNPCs_67: -7549223479239222097
+      FemaleNPCs_68: 7068267009692672173
+      FemaleNPCs_69: 5598153401432215454
+      FemaleNPCs_7: -3903869270255238628
+      FemaleNPCs_70: -8377351799866213811
+      FemaleNPCs_71: -8418152362875328983
+      FemaleNPCs_8: -4329508753093342471
+      FemaleNPCs_9: -8731799995040513304
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

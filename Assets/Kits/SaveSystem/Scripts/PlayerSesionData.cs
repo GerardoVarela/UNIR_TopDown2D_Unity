@@ -9,10 +9,11 @@ public class PlayerSesionData
     public int health;
     public int coins;
     // Add other relevant player data as needed
+    
 
     public PlayerSesionData() // New Game
     {
-        this.level = Level.CAVE;
+        this.level = Level.MEADOW;
         this.health = 100;
         this.coins = 0;
     }

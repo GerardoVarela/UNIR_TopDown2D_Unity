@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 861b5561e1c685b49aceb3fab12f8cfe, type: 3}
+  m_Name: InventoryItemsDatabase
+  m_EditorClassIdentifier: Assembly-CSharp::ItemDatabase
+  pickablePrefabs:
+  - {fileID: 1235195508731939575, guid: f80008c1e346005469626beeeaaf91bd, type: 3}
+  - {fileID: 4686305826622076981, guid: a2e7412dbb054564a851155c0662b935, type: 3}
+  - {fileID: 4299141423124794933, guid: 47d44250762a067458a7cc164cda8efe, type: 3}
+  - {fileID: 8158711240646524351, guid: 0e861ab2de335e54fb104db1f5496f06, type: 3}
+  - {fileID: 5023725758422853925, guid: bfce6fa4c68cbf946a67f9f17c074f2e, type: 3}

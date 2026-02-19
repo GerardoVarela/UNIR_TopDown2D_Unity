@@ -3,7 +3,10 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 3
-  tags: []
+  tags:
+  - Feet
+  - NPC
+  - Shadow
   layers:
   - Default
   - TransparentFX
@@ -11,7 +14,7 @@ TagManager:
   - 
   - Water
   - UI
-  - 
+  - Player
   - 
   - 
   - 
@@ -44,11 +47,26 @@ TagManager:
   - name: Background
     uniqueID: 2034899095
     locked: 0
+  - name: BackgroundStuff
+    uniqueID: 691079539
+    locked: 0
+  - name: Water
+    uniqueID: 3201413821
+    locked: 0
+  - name: Ground
+    uniqueID: 3085990031
+    locked: 0
+  - name: Environment
+    uniqueID: 2764493723
+    locked: 0
   - name: Characters
     uniqueID: 510124843
     locked: 0
   - name: CloudShadows
     uniqueID: 3948989391
+    locked: 0
+  - name: BackgroundUpper
+    uniqueID: 2319271063
     locked: 0
   m_RenderingLayers:
   - Default

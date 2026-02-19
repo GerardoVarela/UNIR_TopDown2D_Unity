@@ -8,15 +8,10 @@ public class PlayerCharacter : BaseCharacter
     [SerializeField] InputActionReference move;
     [SerializeField] InputActionReference punch;
 
-    [Header("Punch data")]
-    [SerializeField] float punchRadius = 0.3f;
-    [SerializeField] float punchRange = 1f;
 
-    Life life;
     protected override void Awake()
     {
         base.Awake();
-        life = GetComponent<Life>();
 
         // Load player position from saved session if available
         LoadPlayerPosition();
@@ -84,7 +79,7 @@ public class PlayerCharacter : BaseCharacter
         // Update player position in GameManager periodically
         UpdatePositionInGameManager();
     }
-
+    
     private float lastPositionUpdateTime = 0f;
     private float positionUpdateInterval = 1f; // Update every 1 second
 
@@ -107,32 +102,15 @@ public class PlayerCharacter : BaseCharacter
         Drop drop = other.GetComponent<Drop>();
         if (drop)
         {
-            life.RecoverHealth(drop.dropDefinition.healthRecovery);
+            ApplyItemEffect(drop.dropDefinition);
             drop.NotifyPickedUp();
         }
     }
-    Vector2 punchDirection = Vector2.down;
     private void PerformPunch()
     {
-        RaycastHit2D[] hits = Physics2D.CircleCastAll(transform.position, punchRadius, punchDirection * punchRange);
-
-        foreach (RaycastHit2D hit in hits)
-        {
-            animator.SetTrigger("Attack");
-            BaseCharacter otherBaseCharacter = hit.collider.GetComponent<BaseCharacter>();
-            if (otherBaseCharacter != this)
-            {
-                otherBaseCharacter?.NotifyPunch();
-            }
-        }
+        PerformDirectionalAttack();
     }
 
-    //Dibujar gizmos de golpe
-    private void OnDrawGizmos()
-    {
-        Gizmos.color = Color.red;
-        Gizmos.DrawRay(transform.position, punchDirection * punchRange);
-    }
     private void OnDisable()
     {
         move.action.Disable();
@@ -150,7 +128,7 @@ public class PlayerCharacter : BaseCharacter
         rawMove = context.action.ReadValue<Vector2>();
         if (rawMove.magnitude > 0f)
         {
-            punchDirection = rawMove.normalized;
+            attackDirection = rawMove.normalized;
         }
     }
 
@@ -159,4 +137,6 @@ public class PlayerCharacter : BaseCharacter
     {
         mustPunch = true;
     }
+
+
 }
