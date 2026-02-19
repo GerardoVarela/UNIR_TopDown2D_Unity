@@ -114,7 +114,7 @@ MonoBehaviour:
   priority: 0
   side: 0
   life: {fileID: 8866533460439102040}
-  sidesToAttrack: 01000000
+  sidesToAttack: 01000000
   attackRange: 0.24
   attackRadius: 0.11
   attackDamage: 0.2
