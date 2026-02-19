@@ -28,6 +28,31 @@ public class LevelSelector : MonoBehaviour
         SceneManager.LoadScene(convertedLevelName);
     }
 
+    public void LoadCurrentLevel()
+    {
+        Time.timeScale = 1f;
+
+        Level levelToLoad = Level.MEADOW;
+
+        if (GameManager.Instance != null && GameManager.Instance.HasActiveSession())
+        {
+            levelToLoad = GameManager.Instance.CurrentSessionData.level;
+        }
+        else
+        {
+            Debug.LogWarning("LevelSelector: no active session found, falling back to default level.");
+        }
+
+        LoadLevel(levelToLoad);
+    }
+
+    public void Credits()
+    {
+        Time.timeScale = 1f;
+        // Load the credits scene
+        SceneManager.LoadScene("Credits");
+    }
+
     public void QuitGame()
     {
         #if UNITY_EDITOR

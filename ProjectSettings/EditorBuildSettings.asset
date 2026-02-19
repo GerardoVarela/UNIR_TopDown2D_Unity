@@ -20,6 +20,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Levels/Castle.unity
     guid: b7a47b20dd1562c46ae3f78b2158eb41
+  - enabled: 1
+    path: Assets/Scenes/Credits.unity
+    guid: f27a476ee9381b34cb82c0fefe63d440
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: ea35775851d88804ba95a9c1c07fc06a, type: 3}
   m_UseUCBPForAssetBundles: 0
