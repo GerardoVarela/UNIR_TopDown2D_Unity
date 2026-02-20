@@ -16,6 +16,9 @@ public class Life : MonoBehaviour
     [SerializeField] public UnityEvent<float> onLifeChanged;
     [SerializeField] public UnityEvent onDeath;
     [SerializeField] public GameObject dropPrefab;
+    private SFXType lifeSoundType = SFXType.LifeUp;
+    private Knockback knockback;
+    private Flash flash;
 
     private void OnValidate()
     {
@@ -29,23 +32,21 @@ public class Life : MonoBehaviour
     private void Awake()
     {
         currentLife = startingLife;
+        knockback = GetComponent<Knockback>();
+        flash = GetComponent<Flash>();
     }
     public void OnHitReceived(float damage)
     {
         if (currentLife > 0f)
         {
             currentLife -= damage;
+            
+            if (transform.CompareTag("Enemy")) knockback?.GetKnockedBack(PlayerCharacter.Instance.transform);
+            
+            if (flash) StartCoroutine(flash.FlashRoutine());
+
             onLifeChanged.Invoke(currentLife / startingLife);
-            if (currentLife <= 0.01f)
-            {
-                onDeath.Invoke();
-                Vector3 offset = new Vector3(0, 0.5f, 0);
-                if (dropPrefab != null)
-                {
-                    Instantiate(dropPrefab, transform.position, Quaternion.identity);
-                }
-                Destroy(gameObject);
-            }
+            CheckHealth();
         }
     }
 
@@ -56,6 +57,20 @@ public class Life : MonoBehaviour
             currentLife += healthRecovery;
             currentLife = Mathf.Clamp(currentLife / startingLife, 0f, startingLife);
             onLifeChanged.Invoke(currentLife);
+            SoundManager.Instance?.PlaySFX(lifeSoundType);
+        }
+    }
+
+    public void CheckHealth()
+    {
+        if (currentLife <= 0.01f)
+        {
+            onDeath.Invoke();
+            if (dropPrefab != null)
+            {
+                Instantiate(dropPrefab, transform.position, Quaternion.identity);
+            }
+            Destroy(gameObject);
         }
     }
 }

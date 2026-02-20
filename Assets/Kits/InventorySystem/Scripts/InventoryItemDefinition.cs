@@ -12,4 +12,5 @@ public class InventoryItemDefinition : ItemEffectDefinition
     public bool usableInUI = true;
     public bool removableInUI = true;
     public GameObject objectToSpawnOnUse;
+    public SFXType playSFXPickup;
 }

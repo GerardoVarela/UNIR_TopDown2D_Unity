@@ -33,6 +33,8 @@ public class PickableInventoryItem : MonoBehaviour
         Inventory inventory = other.GetComponent<Inventory>();
         inventory?.AddItem(itemDefinition);
 
+        SoundManager.Instance?.PlaySFX(itemDefinition.playSFXPickup);
+
         Destroy(gameObject);
     }
 }

@@ -374,9 +374,11 @@ GameObject:
   - component: {fileID: 7210487383667191054}
   - component: {fileID: 2318549499787067815}
   - component: {fileID: 4803833544811767754}
+  - component: {fileID: 8784214845960929141}
+  - component: {fileID: -2776265548760453042}
   m_Layer: 0
   m_Name: GreenOrc
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -494,11 +496,13 @@ MonoBehaviour:
   priority: 0
   side: 1
   life: {fileID: 0}
+  sidesToAttack: 00000000
   attackRange: 1
   attackRadius: 0.3
   attackDamage: 0.2
   attackCooldown: 3
-  directionalAttackSoundType: 0
+  directionalAttackSoundType: 3
+  stopMovingDelay: 0.25
 --- !u!114 &5304743431078630309
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -601,3 +605,31 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   dropPrefab: {fileID: 8158711240646524351, guid: 0e861ab2de335e54fb104db1f5496f06, type: 3}
+--- !u!114 &8784214845960929141
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7120290316429324608}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c6fb58bdf916ec4ead35c54ce9f0a3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Knockback
+  knockBackTime: 0.01
+  knockBackThrust: 10
+--- !u!114 &-2776265548760453042
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7120290316429324608}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07dc32706abbed44c94e4f7785a45016, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Flash
+  whiteFlashMat: {fileID: 2100000, guid: f2573284669aa1b40b14ab7a69ae99d0, type: 2}
+  restoreDefaultMatTime: 0.1

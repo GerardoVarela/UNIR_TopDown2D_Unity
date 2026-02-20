@@ -7,11 +7,13 @@ public class PlayerCharacter : BaseCharacter
 {
     [SerializeField] InputActionReference move;
     [SerializeField] InputActionReference punch;
+    public static PlayerCharacter Instance;
 
     private Inventory inventory;
 
     protected override void Awake()
     {
+        Instance = this;
         base.Awake();
 
         if (inventory == null)

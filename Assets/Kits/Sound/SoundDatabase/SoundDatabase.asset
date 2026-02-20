@@ -16,16 +16,24 @@ MonoBehaviour:
   sfxClipList:
   - type: 1
     clips:
-    - {fileID: 8300000, guid: 56703418e3aed4c47a5f6622816b8e41, type: 3}
-    - {fileID: 8300000, guid: 88b1cbe3caa3fee4b8b103b5edd7aba9, type: 3}
+    - {fileID: 8300000, guid: 00429ed8f72cfbf49adb65f448c8df0b, type: 3}
   - type: 2
     clips:
     - {fileID: 8300000, guid: c91fcf414acc0344cb03b13996f1bf3b, type: 3}
     - {fileID: 8300000, guid: 1eb7cbaf61d23a64bbd36c0a38b5cb0c, type: 3}
     - {fileID: 8300000, guid: fd25a15f9797641458336cccfb445343, type: 3}
-  - type: 3
+  - type: 4
     clips:
     - {fileID: 8300000, guid: 124094188a7b3f54ea0b47a97f503829, type: 3}
+  - type: 3
+    clips:
+    - {fileID: 8300000, guid: dd169c4adb575a642a5fe92d6bad0624, type: 3}
+  - type: 5
+    clips:
+    - {fileID: 8300000, guid: 43255bd5a6a8bea42a01d466ee8e8360, type: 3}
+  - type: 6
+    clips:
+    - {fileID: 8300000, guid: 26494aac192c9224287003c76ef3a071, type: 3}
   musicClipList:
   - type: 1
     clip: {fileID: 8300000, guid: ddbc878d0fc9cb74b8aee819c45a02b5, type: 3}

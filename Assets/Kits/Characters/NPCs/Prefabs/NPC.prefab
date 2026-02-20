@@ -189,7 +189,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.008449912, y: -0.0030895472}
+  m_Offset: {x: -0.0000030696392, y: -0.0011616945}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -199,7 +199,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.5217297, y: 0.58092666}
+  m_Size: {x: 0.68041116, y: 0.66575265}
   m_EdgeRadius: 0
 --- !u!114 &9154946001312572491
 MonoBehaviour:
@@ -217,11 +217,13 @@ MonoBehaviour:
   priority: 0
   side: 0
   life: {fileID: 0}
+  sidesToAttack: 00000000
   attackRange: 1
   attackRadius: 0.3
   attackDamage: 0.2
   attackCooldown: 1
   directionalAttackSoundType: 0
+  stopMovingDelay: 0.25
   npcName: 
   npcColor: {r: 0.05882353, g: 0.2627451, b: 0.1764706, a: 0}
   npcProfilePIC: {fileID: 0}
@@ -230,14 +232,13 @@ MonoBehaviour:
   dialogueText: {fileID: 0}
   dialogueNPCImage: {fileID: 0}
   dialogueNPCName: {fileID: 0}
-  dialogue:
-  - "\xA1Hola! Veo que eres un guerrero..."
-  - "\xBFEsa Torre? Ah..."
-  - "Podr\xE1s regresar a ella en caso de que te pase algo..."
-  - Esa cueva se ve peligrosa...
-  - "\xA1Mucha suerte, guerrero!"
+  dialogues: []
   wordSpeed: 0.04
   playerPosition: {fileID: 0}
+  activateQuest: 0
+  requiredItem: {fileID: 0}
+  requiredItemAmount: 3
+  dropPrefab: {fileID: 0}
 --- !u!50 &5897009212013712044
 Rigidbody2D:
   serializedVersion: 5

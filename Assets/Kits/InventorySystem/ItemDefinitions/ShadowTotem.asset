@@ -21,3 +21,4 @@ MonoBehaviour:
   usableInUI: 1
   removableInUI: 1
   objectToSpawnOnUse: {fileID: 6904452935348020248, guid: 5a931de46646c7b43982730bf8a62cbe, type: 3}
+  playSFXPickup: 6
