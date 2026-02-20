@@ -10,7 +10,7 @@ public class PossessedSkullEnemy : BaseEnemy
     [SerializeField] private float prepareSpeed = 3f;
     [SerializeField] private float prepareRadius = 0.5f;
     [SerializeField] private float attackSpeed = 10f;
-    [SerializeField] private int damage = 10;
+    [SerializeField] private float damage = 0.2f;
     
     private bool _hasAllreadySeen = false;
     private Vector3 _initialPosition;
@@ -95,7 +95,7 @@ public class PossessedSkullEnemy : BaseEnemy
             if (playerTransform != null && Vector2.Distance(transform.position, playerTransform.position) < 0.3f)
             {
                 // Aquí llamarías al método de daño del jugador
-                // playerTransform.GetComponent<PlayerHealth>()?.TakeDamage(damage);
+                playerTransform.GetComponent<PlayerCharacter>()?.NotifyPunch(damage);
                 Debug.Log($"Skull hit player for {damage} damage!");
                 break;
             }

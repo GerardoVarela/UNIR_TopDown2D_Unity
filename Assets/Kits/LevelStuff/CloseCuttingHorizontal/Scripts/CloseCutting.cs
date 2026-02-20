@@ -8,8 +8,7 @@ public class CloseCutting : MonoBehaviour
 
         if(playerCharacter != null)
         {
-            Debug.Log("Player hit by close cutting");
-            // TODO: Call the damage method of PlayerCharacter
+            playerCharacter.NotifyPunch(0.2f);
         }
     }
 }
