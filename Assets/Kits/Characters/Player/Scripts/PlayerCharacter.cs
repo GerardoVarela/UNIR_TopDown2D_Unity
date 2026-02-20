@@ -20,8 +20,13 @@ public class PlayerCharacter : BaseCharacter
         {
             inventory = GetComponent<Inventory>();
         }
-        // Load player position from saved session if available
+        // Load player position from saved session if available        
         LoadPlayerPosition();
+    }
+
+    private void Start()
+    {
+        inventory.SetCoins(GameManager.Instance?.CurrentSessionData?.coins ?? 0);
     }
 
     private void LoadPlayerPosition()

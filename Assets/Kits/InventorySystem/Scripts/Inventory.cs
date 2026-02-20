@@ -13,6 +13,12 @@ public class Inventory : MonoBehaviour
     public event Action<int> OnCoinsChanged;
     private int coins = 0;
 
+    public void SetCoins(int amount)
+    {
+        coins = amount;
+        OnCoinsChanged?.Invoke(coins);
+    }
+
     private void Awake()
     {
          if (character == null)
@@ -110,5 +116,6 @@ public class Inventory : MonoBehaviour
     {
         coins+=amount;
         OnCoinsChanged?.Invoke(coins);
+        GameManager.Instance.UpdatePlayerCoins(coins);
     }
 }
