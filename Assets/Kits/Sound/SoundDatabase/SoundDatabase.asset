@@ -43,6 +43,15 @@ MonoBehaviour:
   - type: 7
     clips:
     - {fileID: 8300000, guid: 1e866772b61203345be3e8bf2ab35522, type: 3}
+  - type: 8
+    clips:
+    - {fileID: 8300000, guid: f11db4559b3ffff45b62e9327fc5535d, type: 3}
+  - type: 9
+    clips:
+    - {fileID: 8300000, guid: 7c47b20bb9874304a809dc5580d403ba, type: 3}
+  - type: 10
+    clips:
+    - {fileID: 8300000, guid: 2b21ef916f6943c439b71a7c74568878, type: 3}
   musicClipList:
   - type: 1
     clip: {fileID: 8300000, guid: ddbc878d0fc9cb74b8aee819c45a02b5, type: 3}
