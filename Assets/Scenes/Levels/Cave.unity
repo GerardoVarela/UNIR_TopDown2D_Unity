@@ -1073,6 +1073,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 377497835604183826, guid: 08dc21530de26814dba79bf21b544fc1, type: 3}
+      propertyPath: nextLevel
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1373425867103164724, guid: 08dc21530de26814dba79bf21b544fc1, type: 3}
       propertyPath: m_Name
       value: NextLeveltrigger
