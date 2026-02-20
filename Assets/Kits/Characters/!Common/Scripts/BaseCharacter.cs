@@ -61,7 +61,7 @@ public class BaseCharacter : MonoBehaviour, IVisible2D
         rb2D.position += direction * linearSpeed * Time.deltaTime;
         lastMoveDirection = direction;
 
-        isTryingToStop = false; 
+        isTryingToStop = false;
     }
 
 

@@ -12,29 +12,49 @@ PrefabInstance:
       propertyPath: m_Name
       value: Medkit Small Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 1763710999622883042, guid: f95aff47f1056f94581d04cbe3280c0d, type: 3}
+      propertyPath: m_Size.x
+      value: 0.12221789
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763710999622883042, guid: f95aff47f1056f94581d04cbe3280c0d, type: 3}
+      propertyPath: m_Size.y
+      value: 0.114970356
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763710999622883042, guid: f95aff47f1056f94581d04cbe3280c0d, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.00060403347
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763710999622883042, guid: f95aff47f1056f94581d04cbe3280c0d, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.00060392916
+      objectReference: {fileID: 0}
     - target: {fileID: 3193174915425815102, guid: f95aff47f1056f94581d04cbe3280c0d, type: 3}
       propertyPath: dropDefinition
       value: 
       objectReference: {fileID: 11400000, guid: 2c9de6c0b57f84d49b68ae9838c8642a, type: 2}
     - target: {fileID: 3246640832292329785, guid: f95aff47f1056f94581d04cbe3280c0d, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 3673975071209473385, guid: b592791ff8e90214eb7f741e22af7777, type: 3}
+    - target: {fileID: 3246640832292329785, guid: f95aff47f1056f94581d04cbe3280c0d, type: 3}
       propertyPath: m_Color.b
-      value: 0.16990381
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3246640832292329785, guid: f95aff47f1056f94581d04cbe3280c0d, type: 3}
       propertyPath: m_Color.g
-      value: 0.16990381
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3246640832292329785, guid: f95aff47f1056f94581d04cbe3280c0d, type: 3}
       propertyPath: m_Color.r
-      value: 0.18490559
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4147606623424307977, guid: f95aff47f1056f94581d04cbe3280c0d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 1.79
       objectReference: {fileID: 0}
     - target: {fileID: 4147606623424307977, guid: f95aff47f1056f94581d04cbe3280c0d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.853
       objectReference: {fileID: 0}
     - target: {fileID: 4147606623424307977, guid: f95aff47f1056f94581d04cbe3280c0d, type: 3}
       propertyPath: m_LocalPosition.z
@@ -70,22 +90,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8653957601356011344, guid: f95aff47f1056f94581d04cbe3280c0d, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.05
+      value: 1.2221118
       objectReference: {fileID: 0}
     - target: {fileID: 8653957601356011344, guid: f95aff47f1056f94581d04cbe3280c0d, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.05
+      value: 1.2221118
       objectReference: {fileID: 0}
     - target: {fileID: 8653957601356011344, guid: f95aff47f1056f94581d04cbe3280c0d, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.05
+      value: 1.2221118
       objectReference: {fileID: 0}
     - target: {fileID: 8653957601356011344, guid: f95aff47f1056f94581d04cbe3280c0d, type: 3}
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 179557211332020765, guid: f95aff47f1056f94581d04cbe3280c0d, type: 3}
+    - {fileID: 7082527049395749887, guid: f95aff47f1056f94581d04cbe3280c0d, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f95aff47f1056f94581d04cbe3280c0d, type: 3}

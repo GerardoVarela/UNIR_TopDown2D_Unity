@@ -20,3 +20,4 @@ MonoBehaviour:
   numUses: 1
   usableInUI: 1
   removableInUI: 1
+  objectToSpawnOnUse: {fileID: 0}

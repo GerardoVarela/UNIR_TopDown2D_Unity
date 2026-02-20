@@ -7,6 +7,7 @@ public interface IVisible2D
         PlayerFriends,
         Enemies,
         Neutrals,
+        destructible
     }
 
     public int GetPriority();
