@@ -16,9 +16,11 @@ GameObject:
   - component: {fileID: 8728795053658206362}
   - component: {fileID: 6894892637128038590}
   - component: {fileID: 5779187182073148309}
+  - component: {fileID: -8305947104670402708}
+  - component: {fileID: 4321900926467853287}
   m_Layer: 0
   m_Name: BlueOrc
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -135,11 +137,13 @@ MonoBehaviour:
   priority: 0
   side: 1
   life: {fileID: 0}
+  sidesToAttack: 00000000
   attackRange: 0.25
   attackRadius: 0.18
   attackDamage: 0.2
   attackCooldown: 3
   directionalAttackSoundType: 0
+  stopMovingDelay: 0.25
 --- !u!114 &5361509892053800631
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -242,3 +246,30 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   dropPrefab: {fileID: 8158711240646524351, guid: 0e861ab2de335e54fb104db1f5496f06, type: 3}
+--- !u!114 &-8305947104670402708
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7669841931648387458}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c6fb58bdf916ec4ead35c54ce9f0a3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Knockback
+  knockBackTime: 0.01
+--- !u!114 &4321900926467853287
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7669841931648387458}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07dc32706abbed44c94e4f7785a45016, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Flash
+  whiteFlashMat: {fileID: 2100000, guid: f2573284669aa1b40b14ab7a69ae99d0, type: 2}
+  restoreDefaultMatTime: 0.1

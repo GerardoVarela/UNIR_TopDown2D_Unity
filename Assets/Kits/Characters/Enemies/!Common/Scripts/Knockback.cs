@@ -5,7 +5,8 @@ public class Knockback : MonoBehaviour
 {
     public bool gettingKnockedBack { get; private set; }
 
-    [SerializeField] private float knockBackTime = .2f;
+    [SerializeField] private float knockBackTime = 0.2f;
+    [SerializeField] private float knockBackThrust = 10f;
 
     private Rigidbody2D rb2D;
 
@@ -14,7 +15,7 @@ public class Knockback : MonoBehaviour
         rb2D = GetComponent<Rigidbody2D>();
     }
 
-    public void GetKnockedBack(Transform damageSource, float knockBackThrust)
+    public void GetKnockedBack(Transform damageSource)
     {
         gettingKnockedBack = true;
         Vector2 difference = (transform.position - damageSource.position).normalized * knockBackThrust * rb2D.mass;

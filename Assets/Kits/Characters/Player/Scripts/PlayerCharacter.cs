@@ -7,14 +7,14 @@ public class PlayerCharacter : BaseCharacter
 {
     [SerializeField] InputActionReference move;
     [SerializeField] InputActionReference punch;
-
+    public static PlayerCharacter Instance;
 
     protected override void Awake()
     {
+        Instance = this;
         base.Awake();
-
         // Load player position from saved session if available
-        LoadPlayerPosition();
+        // LoadPlayerPosition();
     }
 
     private void LoadPlayerPosition()

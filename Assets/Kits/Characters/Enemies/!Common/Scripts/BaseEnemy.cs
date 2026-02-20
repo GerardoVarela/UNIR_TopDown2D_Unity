@@ -3,11 +3,13 @@ using UnityEngine;
 public class BaseEnemy : BaseCharacter
 {
     Sight2D sight;
+    private Knockback knockback;
 
     protected override void Awake()
     {
         base.Awake();
         sight = GetComponent<Sight2D>();
+        knockback = GetComponent<Knockback>();
     }
 
     protected override void Update()
@@ -26,7 +28,8 @@ public class BaseEnemy : BaseCharacter
             (closestTarget.position - transform.position).normalized;
 
         attackDirection = directionToTarget;
-        Move(directionToTarget);
+
+        if (!knockback.gettingKnockedBack) Move(directionToTarget);
 
         float distance =
             Vector2.Distance(transform.position, closestTarget.position);
