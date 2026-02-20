@@ -10,6 +10,8 @@ public class Inventory : MonoBehaviour
     private List<InventoryItem> items = new List<InventoryItem>();
 
     public event Action OnInventoryChanged;
+    public event Action<int> OnCoinsChanged;
+    private int coins = 0;
 
     private void Awake()
     {
@@ -102,5 +104,11 @@ public class Inventory : MonoBehaviour
     public List<InventoryItem> GetItems()
     {
         return items;
+    }
+
+    public void AddCoins(int amount)
+    {
+        coins+=amount;
+        OnCoinsChanged?.Invoke(coins);
     }
 }

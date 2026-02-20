@@ -5,12 +5,24 @@ public class NextLevelTrigger : MonoBehaviour
 {
     [SerializeField] private Level nextLevel;
     [SerializeField] private bool autoDisableAfterTrigger = true;
+    
+    // [Header("Optional Baktracking Settings")]
+    // [SerializeField] private bool backtrackingLevel = false;
+    // [SerializeField] private Transform backtrackingPoint;
 
-    private bool hasBeenTriggered = false;
+    private bool _hasBeenTriggered = false;
+
+    // public void OnDrawGizmos()
+    // {
+    //     if(!backtrackingPoint) return;
+
+    //     Gizmos.color = Color.blue;
+    //     Gizmos.DrawWireSphere(backtrackingPoint.position, 0.1f);
+    // }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Player") && !hasBeenTriggered)
+        if (collision.CompareTag("Player") && !_hasBeenTriggered)
         {
             if (GameManager.Instance == null)
             {
@@ -27,7 +39,7 @@ public class NextLevelTrigger : MonoBehaviour
             // Mark as triggered to prevent multiple activations
             if (autoDisableAfterTrigger)
             {
-                hasBeenTriggered = true;
+                _hasBeenTriggered = true;
             }
 
             Debug.Log($"NextLevelTrigger: Player entered trigger, transitioning to {nextLevel}");
@@ -43,7 +55,7 @@ public class NextLevelTrigger : MonoBehaviour
 
     public void ResetTrigger()
     {
-        hasBeenTriggered = false;
+        _hasBeenTriggered = false;
         Debug.Log("NextLevelTrigger: Reset");
     }
 }

@@ -8,13 +8,13 @@ public class AxeKeyMechanism : MonoBehaviour
 {
     [SerializeField] private InputActionReference interact;
     [SerializeField] private UnityEvent onMechanismEvent;
+    [SerializeField] private UnityEvent<AxeKeyMechanism> onEmitMechanismEvent;
 
     private Animator _animator;
     private bool _isActivated = false;
     private bool _isPressed = false;
     
-    // Definimos el color Cyan de forma clara
-    private Color _hoverColor = new Color(0f, 1f, 1f, 1f); 
+    public bool IsActivated => _isActivated;
 
     private void OnEnable()
     {
@@ -58,6 +58,7 @@ public class AxeKeyMechanism : MonoBehaviour
     {
         yield return new WaitForSeconds(0.5f);
         onMechanismEvent.Invoke();
+        onEmitMechanismEvent.Invoke(this);
     }
 
     private void OnTriggerExit2D(Collider2D collision)
@@ -69,6 +70,12 @@ public class AxeKeyMechanism : MonoBehaviour
             _animator.SetBool("IsHover", false);
             _isPressed = false;
         }
+    }
+
+    public void DeactiveMechanism()
+    {
+        _isActivated = false;
+        _animator.SetTrigger("Deactive");
     }
 
     private void OnInteractAxe(InputAction.CallbackContext context)

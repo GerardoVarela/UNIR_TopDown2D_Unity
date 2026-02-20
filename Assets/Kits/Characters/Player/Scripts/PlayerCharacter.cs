@@ -9,12 +9,19 @@ public class PlayerCharacter : BaseCharacter
     [SerializeField] InputActionReference punch;
     public static PlayerCharacter Instance;
 
+    private Inventory inventory;
+
     protected override void Awake()
     {
         Instance = this;
         base.Awake();
+
+        if (inventory == null)
+        {
+            inventory = GetComponent<Inventory>();
+        }
         // Load player position from saved session if available
-        // LoadPlayerPosition();
+        LoadPlayerPosition();
     }
 
     private void LoadPlayerPosition()
@@ -104,6 +111,13 @@ public class PlayerCharacter : BaseCharacter
         {
             ApplyItemEffect(drop.dropDefinition);
             drop.NotifyPickedUp();
+        }
+
+        Coin coin = other.GetComponent<Coin>();
+        if (coin)
+        {
+            inventory.AddCoins(coin.GetAmount());
+            coin.NotifyPickedUp();
         }
     }
     private void PerformPunch()
