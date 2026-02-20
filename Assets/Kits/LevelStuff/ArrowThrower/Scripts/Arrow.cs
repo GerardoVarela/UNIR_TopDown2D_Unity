@@ -7,6 +7,7 @@ public class Arrow : MonoBehaviour
 
     private void Start()
     {
+        SoundManager.Instance?.PlaySFX(SFXType.ArrowLaunched);
         Destroy(gameObject, 5f);
     }
 
@@ -45,6 +46,7 @@ public class Arrow : MonoBehaviour
         if (playerCharacter != null)
         {
             playerCharacter.NotifyPunch(0.1f);
+            SoundManager.Instance?.PlaySFX(SFXType.ArrowHit);
             Destroy(gameObject);
         }
     }

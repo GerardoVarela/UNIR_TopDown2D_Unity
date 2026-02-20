@@ -19,6 +19,9 @@ public enum SFXType
     LifeUp,
     ShadowTotem,
     PickedUpCoin,
+    ArrowLaunched,
+    ArrowHit,
+    SawHit,
 }
 
 public enum MusicType
