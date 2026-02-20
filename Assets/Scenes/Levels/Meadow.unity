@@ -22001,6 +22001,34 @@ PrefabInstance:
       propertyPath: dialogueNPCImage
       value: 
       objectReference: {fileID: 654891969}
+    - target: {fileID: 9154946001312572491, guid: 9a739f3767a46194cbdd0c95311ad6b0, type: 3}
+      propertyPath: dialogues.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9154946001312572491, guid: 9a739f3767a46194cbdd0c95311ad6b0, type: 3}
+      propertyPath: dialogues.Array.data[0].lines.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 9154946001312572491, guid: 9a739f3767a46194cbdd0c95311ad6b0, type: 3}
+      propertyPath: 'dialogues.Array.data[0].lines.Array.data[0]'
+      value: "\xA1Hola! Veo que eres un guerrero... "
+      objectReference: {fileID: 0}
+    - target: {fileID: 9154946001312572491, guid: 9a739f3767a46194cbdd0c95311ad6b0, type: 3}
+      propertyPath: 'dialogues.Array.data[0].lines.Array.data[1]'
+      value: "\xBFEsa Torre? Ah..."
+      objectReference: {fileID: 0}
+    - target: {fileID: 9154946001312572491, guid: 9a739f3767a46194cbdd0c95311ad6b0, type: 3}
+      propertyPath: 'dialogues.Array.data[0].lines.Array.data[2]'
+      value: "Podr\xE1s regresar a ella en caso de que te pase algo..."
+      objectReference: {fileID: 0}
+    - target: {fileID: 9154946001312572491, guid: 9a739f3767a46194cbdd0c95311ad6b0, type: 3}
+      propertyPath: 'dialogues.Array.data[0].lines.Array.data[3]'
+      value: Esa cueva se ve peligrosa...
+      objectReference: {fileID: 0}
+    - target: {fileID: 9154946001312572491, guid: 9a739f3767a46194cbdd0c95311ad6b0, type: 3}
+      propertyPath: 'dialogues.Array.data[0].lines.Array.data[4]'
+      value: "\xA1Mucha suerte, guerrero!"
+      objectReference: {fileID: 0}
     - target: {fileID: 9194667603022053446, guid: 9a739f3767a46194cbdd0c95311ad6b0, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.001
