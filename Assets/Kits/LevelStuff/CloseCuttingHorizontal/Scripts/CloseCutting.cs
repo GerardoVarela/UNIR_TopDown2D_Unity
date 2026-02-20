@@ -8,6 +8,7 @@ public class CloseCutting : MonoBehaviour
 
         if(playerCharacter != null)
         {
+            SoundManager.Instance?.PlaySFX(SFXType.SawHit);
             playerCharacter.NotifyPunch(0.2f);
         }
     }
