@@ -41,11 +41,13 @@ public class InventoryItemUI : MonoBehaviour
 
     void OnUseClicked()
     {
+        SoundManager.Instance?.PlayUI(UIClipType.ButtonClick);
         inventory.UseItem(item);
     }
 
     void OnDiscardClicked()
     {
+        SoundManager.Instance?.PlayUI(UIClipType.ButtonClick);
         inventory.RemoveItem(item, true);
     }
 }

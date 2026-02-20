@@ -42,6 +42,7 @@ public class PauseMenu : MonoBehaviour
         Time.timeScale = 1f;
         pauseMenuUI.SetActive(false);
         _isPaused = false;
+        PlayUISound(UIClipType.OpenPopUp);
     }
 
     private void Pause()
@@ -51,11 +52,21 @@ public class PauseMenu : MonoBehaviour
         _isPaused = true;
         eventSystem.SetSelectedGameObject(null);
         eventSystem.SetSelectedGameObject(firstSelectedGameSelector);
+        PlayUISound(UIClipType.ClosePopUp);
     }
 
     private void OnDisable()
     {
         pause.action.performed -= OnPause;
         pause.action.Disable();
+    }
+
+    public void PlayUISound(UIClipType uIClipType)
+    {
+        SoundManager.Instance?.PlayUI(uIClipType);
+    }
+    public void PlayButtonSound()
+    {
+        PlayUISound(UIClipType.ButtonClick);
     }
 }
