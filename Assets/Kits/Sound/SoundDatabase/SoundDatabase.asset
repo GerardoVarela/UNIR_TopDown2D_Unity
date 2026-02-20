@@ -16,8 +16,7 @@ MonoBehaviour:
   sfxClipList:
   - type: 1
     clips:
-    - {fileID: 8300000, guid: 56703418e3aed4c47a5f6622816b8e41, type: 3}
-    - {fileID: 8300000, guid: 88b1cbe3caa3fee4b8b103b5edd7aba9, type: 3}
+    - {fileID: 8300000, guid: 00429ed8f72cfbf49adb65f448c8df0b, type: 3}
   - type: 2
     clips:
     - {fileID: 8300000, guid: c91fcf414acc0344cb03b13996f1bf3b, type: 3}

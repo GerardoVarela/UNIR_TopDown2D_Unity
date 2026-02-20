@@ -119,7 +119,7 @@ MonoBehaviour:
   attackRange: 0.24
   attackRadius: 0.11
   attackDamage: 0.2
-  attackCooldown: 1
+  attackCooldown: 0.2
   directionalAttackSoundType: 1
   stopMovingDelay: 0.25
   move: {fileID: 0}
