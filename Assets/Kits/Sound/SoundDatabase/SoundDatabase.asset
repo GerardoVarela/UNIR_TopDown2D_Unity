@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ce2cc4d2da5b6f47afe8b88844522c9, type: 3}
+  m_Name: SoundDatabase
+  m_EditorClassIdentifier: Assembly-CSharp::SoundDatabase
+  uiClipList:
+  - type: 1
+    clip: {fileID: 8300000, guid: 19f89c6e740e7447f9e12a8310d3e973, type: 3}
+  - type: 2
+    clip: {fileID: 8300000, guid: 2c5292ba5cf254919a6b9e2b18e04f49, type: 3}
+  - type: 3
+    clip: {fileID: 8300000, guid: 724131bc8a7f34041bb9f1701f0cb58d, type: 3}
+  sfxClipList:
+  - type: 1
+    clips:
+    - {fileID: 8300000, guid: 00429ed8f72cfbf49adb65f448c8df0b, type: 3}
+  - type: 2
+    clips:
+    - {fileID: 8300000, guid: c91fcf414acc0344cb03b13996f1bf3b, type: 3}
+    - {fileID: 8300000, guid: 1eb7cbaf61d23a64bbd36c0a38b5cb0c, type: 3}
+    - {fileID: 8300000, guid: fd25a15f9797641458336cccfb445343, type: 3}
+  - type: 4
+    clips:
+    - {fileID: 8300000, guid: 124094188a7b3f54ea0b47a97f503829, type: 3}
+  - type: 3
+    clips:
+    - {fileID: 8300000, guid: dd169c4adb575a642a5fe92d6bad0624, type: 3}
+  - type: 5
+    clips:
+    - {fileID: 8300000, guid: 43255bd5a6a8bea42a01d466ee8e8360, type: 3}
+  - type: 6
+    clips:
+    - {fileID: 8300000, guid: 26494aac192c9224287003c76ef3a071, type: 3}
+  - type: 7
+    clips:
+    - {fileID: 8300000, guid: 1e866772b61203345be3e8bf2ab35522, type: 3}
+  musicClipList:
+  - type: 1
+    clip: {fileID: 8300000, guid: ddbc878d0fc9cb74b8aee819c45a02b5, type: 3}
+  - type: 2
+    clip: {fileID: 8300000, guid: 510c33ca580a3c24ab2f050263ad4011, type: 3}
+  - type: 3
+    clip: {fileID: 8300000, guid: c47a4c707dcfd0b45b090a81c737f4ff, type: 3}
+  - type: 4
+    clip: {fileID: 8300000, guid: 741a07d6afb087d4d847aafa0978801a, type: 3}
+  - type: 5
+    clip: {fileID: 8300000, guid: ab3c59f380e557742b00ddd5b7cd57e2, type: 3}
+  levelMusicList:
+  - level: 0
+    music: 2
+  - level: 1
+    music: 3
+  - level: 2
+    music: 4
+  - level: 3
+    music: 5

@@ -1,0 +1,64 @@
+using UnityEngine;
+using UnityEngine.SceneManagement;
+
+public enum Level
+{
+    MEADOW, // PRADERA
+    FOREST, // BOSQUE
+    CAVE, // CUEVA
+    CASTLE, // CASTILLO
+}
+
+public class LevelSelector : MonoBehaviour
+{
+    public void MainMenu()
+    {
+        // Load the main menu scene
+        Time.timeScale = 1f;
+        SceneManager.LoadScene("MainMenu");
+    }
+    
+    public void LoadLevel(Level level) // ! It would be necessary?
+    {
+        Time.timeScale = 1f;
+        // Load the selected level scene
+        string levelName = level.ToString();
+        string convertedLevelName = char.ToUpper(levelName[0]) + levelName.Substring(1).ToLower();
+        SoundManager.Instance?.PlayLevelMusic(level);
+        SceneManager.LoadScene(convertedLevelName);
+    }
+
+    public void LoadCurrentLevel()
+    {
+        Time.timeScale = 1f;
+
+        Level levelToLoad = Level.MEADOW;
+
+        if (GameManager.Instance != null && GameManager.Instance.HasActiveSession())
+        {
+            levelToLoad = GameManager.Instance.CurrentSessionData.level;
+        }
+        else
+        {
+            Debug.LogWarning("LevelSelector: no active session found, falling back to default level.");
+        }
+
+        LoadLevel(levelToLoad);
+    }
+
+    public void Credits()
+    {
+        Time.timeScale = 1f;
+        // Load the credits scene
+        SceneManager.LoadScene("Credits");
+    }
+
+    public void QuitGame()
+    {
+        #if UNITY_EDITOR
+            UnityEditor.EditorApplication.isPlaying = false;
+        #else
+            Application.Quit();
+        #endif
+    }
+}

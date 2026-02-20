@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5021dd13a560a3f428e486c1a6528c5f, type: 3}
+  m_Name: HealthPosion
+  m_EditorClassIdentifier: Assembly-CSharp::InventoryItemDefinition
+  healthRecovery: 2
+  bullets: 0
+  image: {fileID: 3946440472938808847, guid: b592791ff8e90214eb7f741e22af7777, type: 3}
+  uniqueItemName: HealthPotion
+  displayName: "Posi\xF3n para vida"
+  numUses: 1
+  usableInUI: 1
+  removableInUI: 0
+  objectToSpawnOnUse: {fileID: 0}
+  playSFXPickup: 0
