@@ -10,14 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5021dd13a560a3f428e486c1a6528c5f, type: 3}
-  m_Name: ShadowTotem
+  m_Name: HealthPosion
   m_EditorClassIdentifier: Assembly-CSharp::InventoryItemDefinition
-  healthRecovery: 0
+  healthRecovery: 2
   bullets: 0
-  image: {fileID: 1275987647928096244, guid: e10185cba0b652b46b453ccf77da9a05, type: 3}
-  uniqueItemName: ShadowTotem
-  displayName: Shadow totem
+  image: {fileID: 3946440472938808847, guid: b592791ff8e90214eb7f741e22af7777, type: 3}
+  uniqueItemName: HealthPotion
+  displayName: "Posi\xF3n para vida"
   numUses: 1
   usableInUI: 1
-  removableInUI: 1
-  objectToSpawnOnUse: {fileID: 6904452935348020248, guid: 5a931de46646c7b43982730bf8a62cbe, type: 3}
+  removableInUI: 0
+  objectToSpawnOnUse: {fileID: 0}

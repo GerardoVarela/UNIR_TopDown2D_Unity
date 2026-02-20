@@ -1,0 +1,1053 @@
+fileFormatVersion: 2
+guid: 0ab102edf67cb5c44afea248ba4a7064
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4539774040568166561
+    second: PixelArtHealthBar2_0
+  - first:
+      213: -1406997417519006228
+    second: PixelArtHealthBar2_1
+  - first:
+      213: 8567517012390510571
+    second: PixelArtHealthBar2_2
+  - first:
+      213: 2515480538156152464
+    second: PixelArtHealthBar2_3
+  - first:
+      213: 1831540591153796867
+    second: PixelArtHealthBar2_4
+  - first:
+      213: -5482215542136092560
+    second: PixelArtHealthBar2_5
+  - first:
+      213: -5051716234960383914
+    second: PixelArtHealthBar2_6
+  - first:
+      213: 2466742306323013613
+    second: PixelArtHealthBar2_7
+  - first:
+      213: -614572715423521694
+    second: PixelArtHealthBar2_8
+  - first:
+      213: 4742860733808148964
+    second: PixelArtHealthBar2_9
+  - first:
+      213: -5878760779003279875
+    second: PixelArtHealthBar2_10
+  - first:
+      213: -9029613008037059777
+    second: PixelArtHealthBar2_11
+  - first:
+      213: 943756981842728037
+    second: PixelArtHealthBar2_12
+  - first:
+      213: 5079705079051453629
+    second: PixelArtHealthBar2_13
+  - first:
+      213: -1916538507787753716
+    second: PixelArtHealthBar2_14
+  - first:
+      213: -8985715086680009635
+    second: PixelArtHealthBar2_15
+  - first:
+      213: -3266098254204380460
+    second: PixelArtHealthBar2_16
+  - first:
+      213: 8070123934481638938
+    second: PixelArtHealthBar2_17
+  - first:
+      213: -6614026983344682058
+    second: PixelArtHealthBar2_18
+  - first:
+      213: 3888634206823228146
+    second: PixelArtHealthBar2_19
+  - first:
+      213: 9189610626006896690
+    second: PixelArtHealthBar2_20
+  - first:
+      213: 6224016944060978955
+    second: PixelArtHealthBar2_21
+  - first:
+      213: -5634300493984133787
+    second: PixelArtHealthBar2_22
+  - first:
+      213: -3142851483207511799
+    second: PixelArtHealthBar2_23
+  - first:
+      213: 7861562211578885744
+    second: PixelArtHealthBar2_24
+  - first:
+      213: 4641265678484977951
+    second: PixelArtHealthBar2_25
+  - first:
+      213: -6633553474122537558
+    second: PixelArtHealthBar2_26
+  - first:
+      213: 520676414487420227
+    second: PixelArtHealthBar2_27
+  - first:
+      213: -5771720440485647661
+    second: PixelArtHealthBar2_28
+  - first:
+      213: -3811140362030067846
+    second: PixelArtHealthBar2_29
+  - first:
+      213: 5381473180041161618
+    second: PixelArtHealthBar2_30
+  - first:
+      213: -5808152746678531841
+    second: PixelArtHealthBar2_31
+  - first:
+      213: 2761060509073538308
+    second: PixelArtHealthBar2_32
+  - first:
+      213: -1129858106464827683
+    second: PixelArtHealthBar2_33
+  - first:
+      213: 8035197648921562086
+    second: PixelArtHealthBar2_34
+  - first:
+      213: -6897533586411615339
+    second: PixelArtHealthBar2_35
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PixelArtHealthBar2_0
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 357
+        width: 141
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f570567109b7ff0c0800000000000000
+      internalID: -4539774040568166561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelArtHealthBar2_1
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 357
+        width: 62
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ced33e8ad47597ce0800000000000000
+      internalID: -1406997417519006228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelArtHealthBar2_2
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 357
+        width: 31
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: beff6a2845fe5e670800000000000000
+      internalID: 8567517012390510571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelArtHealthBar2_3
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 334
+        width: 96
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 096b43cc838c8e220800000000000000
+      internalID: 2515480538156152464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelArtHealthBar2_4
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 338
+        width: 76
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3075e67b670fa6910800000000000000
+      internalID: 1831540591153796867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelArtHealthBar2_5
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 333
+        width: 94
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0784adca2024be3b0800000000000000
+      internalID: -5482215542136092560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelArtHealthBar2_6
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 321
+        width: 62
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 650dc1579d2b4e9b0800000000000000
+      internalID: -5051716234960383914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelArtHealthBar2_7
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 321
+        width: 31
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: def9fc8ee01ab3220800000000000000
+      internalID: 2466742306323013613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelArtHealthBar2_8
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 321
+        width: 31
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 264a8881f599877f0800000000000000
+      internalID: -614572715423521694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelArtHealthBar2_9
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 321
+        width: 32
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e188c965b602d140800000000000000
+      internalID: 4742860733808148964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelArtHealthBar2_10
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 321
+        width: 31
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df5c200f7327a6ea0800000000000000
+      internalID: -5878760779003279875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelArtHealthBar2_11
+      rect:
+        serializedVersion: 2
+        x: 381
+        y: 269
+        width: 55
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3364b46fce50b280800000000000000
+      internalID: -9029613008037059777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelArtHealthBar2_12
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 272
+        width: 56
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 564d70989f5e81d00800000000000000
+      internalID: 943756981842728037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelArtHealthBar2_13
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 203
+        width: 244
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db40c902bdcbe7640800000000000000
+      internalID: 5079705079051453629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelArtHealthBar2_14
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 284
+        width: 31
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0724f4a1661765e0800000000000000
+      internalID: -1916538507787753716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelArtHealthBar2_15
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 284
+        width: 31
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d54d19dacb35c4380800000000000000
+      internalID: -8985715086680009635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelArtHealthBar2_16
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 286
+        width: 31
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4dadf9c31fc7ca2d0800000000000000
+      internalID: -3266098254204380460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelArtHealthBar2_17
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 284
+        width: 31
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a16e72806f6deff60800000000000000
+      internalID: 8070123934481638938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelArtHealthBar2_18
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 284
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6bb44e250814634a0800000000000000
+      internalID: -6614026983344682058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelArtHealthBar2_19
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 284
+        width: 31
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f2a12f453437f530800000000000000
+      internalID: 3888634206823228146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelArtHealthBar2_20
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 275
+        width: 45
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 230db4bfc2e088f70800000000000000
+      internalID: 9189610626006896690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelArtHealthBar2_21
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 275
+        width: 42
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0754c23f66206650800000000000000
+      internalID: 6224016944060978955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelArtHealthBar2_22
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 127
+        width: 234
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56d84427d81fec1b0800000000000000
+      internalID: -5634300493984133787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelArtHealthBar2_23
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 194
+        width: 257
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9015b914a395264d0800000000000000
+      internalID: -3142851483207511799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelArtHealthBar2_24
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 172
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0763bc8dd21e91d60800000000000000
+      internalID: 7861562211578885744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelArtHealthBar2_25
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 172
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f193f4a4b86196040800000000000000
+      internalID: 4641265678484977951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelArtHealthBar2_26
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 171
+        width: 34
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa52e58e242e0f3a0800000000000000
+      internalID: -6633553474122537558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelArtHealthBar2_27
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 171
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34d5278b070d93700800000000000000
+      internalID: 520676414487420227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelArtHealthBar2_28
+      rect:
+        serializedVersion: 2
+        x: 444
+        y: 171
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3daedf9d6dab6efa0800000000000000
+      internalID: -5771720440485647661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelArtHealthBar2_29
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 41
+        width: 96
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7f4b04780c1c1bc0800000000000000
+      internalID: -3811140362030067846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelArtHealthBar2_30
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 6
+        width: 90
+        height: 127
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29b25a05855deaa40800000000000000
+      internalID: 5381473180041161618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelArtHealthBar2_31
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 105
+        width: 214
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff8440d89db456fa0800000000000000
+      internalID: -5808152746678531841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelArtHealthBar2_32
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 41
+        width: 68
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40dffae77e1415620800000000000000
+      internalID: 2761060509073538308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelArtHealthBar2_33
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 14
+        width: 55
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd68195d900f150f0800000000000000
+      internalID: -1129858106464827683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelArtHealthBar2_34
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 29
+        width: 56
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6eb060c70b1c28f60800000000000000
+      internalID: 8035197648921562086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelArtHealthBar2_35
+      rect:
+        serializedVersion: 2
+        x: 445
+        y: 32
+        width: 92
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59b0c937fb90740a0800000000000000
+      internalID: -6897533586411615339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      PixelArtHealthBar2_0: -4539774040568166561
+      PixelArtHealthBar2_1: -1406997417519006228
+      PixelArtHealthBar2_10: -5878760779003279875
+      PixelArtHealthBar2_11: -9029613008037059777
+      PixelArtHealthBar2_12: 943756981842728037
+      PixelArtHealthBar2_13: 5079705079051453629
+      PixelArtHealthBar2_14: -1916538507787753716
+      PixelArtHealthBar2_15: -8985715086680009635
+      PixelArtHealthBar2_16: -3266098254204380460
+      PixelArtHealthBar2_17: 8070123934481638938
+      PixelArtHealthBar2_18: -6614026983344682058
+      PixelArtHealthBar2_19: 3888634206823228146
+      PixelArtHealthBar2_2: 8567517012390510571
+      PixelArtHealthBar2_20: 9189610626006896690
+      PixelArtHealthBar2_21: 6224016944060978955
+      PixelArtHealthBar2_22: -5634300493984133787
+      PixelArtHealthBar2_23: -3142851483207511799
+      PixelArtHealthBar2_24: 7861562211578885744
+      PixelArtHealthBar2_25: 4641265678484977951
+      PixelArtHealthBar2_26: -6633553474122537558
+      PixelArtHealthBar2_27: 520676414487420227
+      PixelArtHealthBar2_28: -5771720440485647661
+      PixelArtHealthBar2_29: -3811140362030067846
+      PixelArtHealthBar2_3: 2515480538156152464
+      PixelArtHealthBar2_30: 5381473180041161618
+      PixelArtHealthBar2_31: -5808152746678531841
+      PixelArtHealthBar2_32: 2761060509073538308
+      PixelArtHealthBar2_33: -1129858106464827683
+      PixelArtHealthBar2_34: 8035197648921562086
+      PixelArtHealthBar2_35: -6897533586411615339
+      PixelArtHealthBar2_4: 1831540591153796867
+      PixelArtHealthBar2_5: -5482215542136092560
+      PixelArtHealthBar2_6: -5051716234960383914
+      PixelArtHealthBar2_7: 2466742306323013613
+      PixelArtHealthBar2_8: -614572715423521694
+      PixelArtHealthBar2_9: 4742860733808148964
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
