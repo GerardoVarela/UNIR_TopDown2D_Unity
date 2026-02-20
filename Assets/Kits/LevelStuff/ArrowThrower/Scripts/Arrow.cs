@@ -44,9 +44,8 @@ public class Arrow : MonoBehaviour
         PlayerCharacter playerCharacter = other.GetComponent<PlayerCharacter>();
         if (playerCharacter != null)
         {
-            Debug.Log("¡Flecha impactó al jugador!");
+            playerCharacter.NotifyPunch(0.1f);
             Destroy(gameObject);
-            // TODO: LLamar a playerCharacter para que reciba daño o reaccione al impacto?
         }
     }
 }
