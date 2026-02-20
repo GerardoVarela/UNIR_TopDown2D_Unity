@@ -17,6 +17,7 @@ public class LockedDoor : MonoBehaviour
 
         if (keyItem != null)
         {
+            SoundManager.Instance.PlaySFX(SFXType.OpenDoor);
             inventory.RemoveItem(keyItem);
             Destroy(gameObject);
         }

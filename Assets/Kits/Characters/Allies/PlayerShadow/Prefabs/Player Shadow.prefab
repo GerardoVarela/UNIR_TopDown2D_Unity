@@ -1257,14 +1257,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37790a13a264e1b4f80588a548943c5c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerShadow
-  linearSpeed: 1
+  linearSpeed: 0.5
   priority: 0
   side: 0
   life: {fileID: 5561959113964792009}
-  sidesToAttrack: 01000000
+  sidesToAttack: 01000000
   attackRange: 1
   attackRadius: 0.3
-  attackDamage: 0.2
+  attackDamage: 0.09
   attackCooldown: 1
   directionalAttackSoundType: 1
   stopMovingDelay: 0.25

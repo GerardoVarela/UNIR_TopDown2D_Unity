@@ -13,6 +13,7 @@ public enum SFXType
     Undefined,
     PlayerAttack1,
     VampireAttack1,
+    OpenDoor
 }
 
 public enum MusicType
