@@ -18,6 +18,7 @@ public class Coin : MonoBehaviour
     public int GetAmount() { return  amount; } 
     public void NotifyPickedUp()
     {
+        SoundManager.Instance?.PlaySFX(SFXType.PickedUpCoin);
         Destroy(gameObject);
     }
 }

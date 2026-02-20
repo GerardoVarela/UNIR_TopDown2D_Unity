@@ -51,9 +51,11 @@ public class MainMenuNavigation : MonoBehaviour
     private IEnumerator ShowGameSelector()
     {
         mainMenuAnimator.SetTrigger("Hide");
+        SoundManager.Instance?.PlayUI(UIClipType.ClosePopUp);
         yield return new WaitForSeconds(1f);
         gameSelectorAnimator.SetTrigger("Show");
         yield return new WaitForSeconds(0.5f);
+        SoundManager.Instance?.PlayUI(UIClipType.OpenPopUp);
         eventSystem.SetSelectedGameObject(firstSelectedGameSelector);
     }
 
@@ -61,5 +63,10 @@ public class MainMenuNavigation : MonoBehaviour
     {
         start.action.performed -= OnStart;
         start.action.Disable();
+    }
+
+    public void PlayButtonSound()
+    {
+        SoundManager.Instance?.PlayUI(UIClipType.ButtonClick);
     }
 }

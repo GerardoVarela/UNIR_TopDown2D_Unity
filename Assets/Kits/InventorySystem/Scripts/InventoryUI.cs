@@ -29,6 +29,7 @@ public class InventoryUI : MonoBehaviour
 
     private void OnToggleInventory(InputAction.CallbackContext context)
     {
+        SoundManager.Instance?.PlayUI((gameObject.activeSelf)?UIClipType.ClosePopUp:UIClipType.OpenPopUp);
         inventoryPanel.SetActive(!inventoryPanel.activeSelf);
     }
 

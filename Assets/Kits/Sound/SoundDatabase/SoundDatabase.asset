@@ -12,7 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2ce2cc4d2da5b6f47afe8b88844522c9, type: 3}
   m_Name: SoundDatabase
   m_EditorClassIdentifier: Assembly-CSharp::SoundDatabase
-  uiClipList: []
+  uiClipList:
+  - type: 1
+    clip: {fileID: 8300000, guid: 19f89c6e740e7447f9e12a8310d3e973, type: 3}
+  - type: 2
+    clip: {fileID: 8300000, guid: 2c5292ba5cf254919a6b9e2b18e04f49, type: 3}
+  - type: 3
+    clip: {fileID: 8300000, guid: 724131bc8a7f34041bb9f1701f0cb58d, type: 3}
   sfxClipList:
   - type: 1
     clips:
@@ -34,6 +40,9 @@ MonoBehaviour:
   - type: 6
     clips:
     - {fileID: 8300000, guid: 26494aac192c9224287003c76ef3a071, type: 3}
+  - type: 7
+    clips:
+    - {fileID: 8300000, guid: 1e866772b61203345be3e8bf2ab35522, type: 3}
   musicClipList:
   - type: 1
     clip: {fileID: 8300000, guid: ddbc878d0fc9cb74b8aee819c45a02b5, type: 3}

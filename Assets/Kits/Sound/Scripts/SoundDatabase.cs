@@ -5,7 +5,8 @@ public enum UIClipType
 {
     Undefined,
     ButtonClick,
-
+    OpenPopUp,
+    ClosePopUp
 }
 
 public enum SFXType
@@ -17,6 +18,7 @@ public enum SFXType
     OpenDoor,
     LifeUp,
     ShadowTotem,
+    PickedUpCoin,
 }
 
 public enum MusicType
