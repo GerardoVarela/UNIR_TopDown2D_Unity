@@ -501,7 +501,7 @@ MonoBehaviour:
   attackRadius: 0.3
   attackDamage: 0.2
   attackCooldown: 3
-  directionalAttackSoundType: 0
+  directionalAttackSoundType: 3
   stopMovingDelay: 0.25
 --- !u!114 &5304743431078630309
 MonoBehaviour:
@@ -618,6 +618,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Knockback
   knockBackTime: 0.01
+  knockBackThrust: 10
 --- !u!114 &-2776265548760453042
 MonoBehaviour:
   m_ObjectHideFlags: 0

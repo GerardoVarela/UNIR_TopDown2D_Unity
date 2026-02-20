@@ -16,6 +16,7 @@ public class Life : MonoBehaviour
     [SerializeField] public UnityEvent<float> onLifeChanged;
     [SerializeField] public UnityEvent onDeath;
     [SerializeField] public GameObject dropPrefab;
+    private SFXType lifeSoundType = SFXType.LifeUp;
     private Knockback knockback;
     private Flash flash;
 
@@ -41,7 +42,8 @@ public class Life : MonoBehaviour
             currentLife -= damage;
             
             if (transform.CompareTag("Enemy")) knockback?.GetKnockedBack(PlayerCharacter.Instance.transform);
-            StartCoroutine(flash?.FlashRoutine());
+            
+            if (flash) StartCoroutine(flash.FlashRoutine());
 
             onLifeChanged.Invoke(currentLife / startingLife);
             CheckHealth();
@@ -55,6 +57,7 @@ public class Life : MonoBehaviour
             currentLife += healthRecovery;
             currentLife = Mathf.Clamp(currentLife / startingLife, 0f, startingLife);
             onLifeChanged.Invoke(currentLife);
+            SoundManager.Instance?.PlaySFX(lifeSoundType);
         }
     }
 
@@ -63,7 +66,6 @@ public class Life : MonoBehaviour
         if (currentLife <= 0.01f)
         {
             onDeath.Invoke();
-            Vector3 offset = new Vector3(0, 0.5f, 0);
             if (dropPrefab != null)
             {
                 Instantiate(dropPrefab, transform.position, Quaternion.identity);

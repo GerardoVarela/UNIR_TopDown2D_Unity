@@ -13,7 +13,10 @@ public enum SFXType
     Undefined,
     PlayerAttack1,
     VampireAttack1,
-    OpenDoor
+    OrcAttack1,
+    OpenDoor,
+    LifeUp,
+    ShadowTotem,
 }
 
 public enum MusicType

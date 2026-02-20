@@ -88,7 +88,7 @@ public class SoundManager : MonoBehaviour
         sfxSource.PlayOneShot(clip);
     }
 
-    // Extra: reproducir SFX en cualquier AudioSource
+    // Extra: reproduce SFX in any AudioSource
     public void PlaySFX(AudioSource source, SFXType type)
     {
         AudioClip clip = database.GetRandomSFXClip(type);
@@ -97,6 +97,16 @@ public class SoundManager : MonoBehaviour
         source.Stop();
         source.clip = clip;
         source.Play();
+    }
+
+    public void PlaySFXPitchShifting(SFXType type)
+    {
+        AudioClip clip = database.GetRandomSFXClip(type);
+        if (clip == null)
+            return;
+
+        sfxSource.pitch = Random.Range(0.9f, 1.1f);
+        sfxSource.PlayOneShot(clip);
     }
 
     #endregion

@@ -21,3 +21,4 @@ MonoBehaviour:
   usableInUI: 1
   removableInUI: 0
   objectToSpawnOnUse: {fileID: 0}
+  playSFXPickup: 0

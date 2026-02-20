@@ -84,7 +84,7 @@ public class BaseCharacter : MonoBehaviour, IVisible2D
         );
 
         animator?.SetTrigger("Attack");
-        SoundManager.Instance?.PlaySFX(directionalAttackSoundType);
+        SoundManager.Instance?.PlaySFXPitchShifting(directionalAttackSoundType);
 
         foreach (RaycastHit2D hit in hits)
         {
