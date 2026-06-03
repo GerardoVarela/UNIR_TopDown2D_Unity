@@ -34,11 +34,11 @@ PrefabInstance:
       objectReference: {fileID: 9189610626006896690, guid: 0ab102edf67cb5c44afea248ba4a7064, type: 3}
     - target: {fileID: 4147606623424307977, guid: f95aff47f1056f94581d04cbe3280c0d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.596
+      value: 0.812
       objectReference: {fileID: 0}
     - target: {fileID: 4147606623424307977, guid: f95aff47f1056f94581d04cbe3280c0d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.861
+      value: 0.143
       objectReference: {fileID: 0}
     - target: {fileID: 4147606623424307977, guid: f95aff47f1056f94581d04cbe3280c0d, type: 3}
       propertyPath: m_LocalPosition.z
@@ -86,11 +86,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8653957601356011344, guid: f95aff47f1056f94581d04cbe3280c0d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.016
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8653957601356011344, guid: f95aff47f1056f94581d04cbe3280c0d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.01
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8653957601356011344, guid: f95aff47f1056f94581d04cbe3280c0d, type: 3}
       propertyPath: m_ConstrainProportionsScale
@@ -101,5 +101,30 @@ PrefabInstance:
     - {fileID: 179557211332020765, guid: f95aff47f1056f94581d04cbe3280c0d, type: 3}
     - {fileID: 7082527049395749887, guid: f95aff47f1056f94581d04cbe3280c0d, type: 3}
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 211073663886052285, guid: f95aff47f1056f94581d04cbe3280c0d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7317519961964765834}
   m_SourcePrefab: {fileID: 100100000, guid: f95aff47f1056f94581d04cbe3280c0d, type: 3}
+--- !u!1 &1848119532410950533 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 211073663886052285, guid: f95aff47f1056f94581d04cbe3280c0d, type: 3}
+  m_PrefabInstance: {fileID: 1965879018658895928}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &7317519961964765834
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1848119532410950533}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bfc4c2d5ebdfd941ba83015ec63ff8c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GizmosReference
+  shape: 0
+  color: {r: 0, g: 1, b: 0.14117648, a: 1}
+  drawGizmo: 1
+  gizmoSize: 0.2
+  rectangleSize: {x: 1, y: 1}

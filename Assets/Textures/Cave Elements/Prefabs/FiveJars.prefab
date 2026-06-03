@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 3834945280362901780}
   - component: {fileID: 9195994559673242873}
   - component: {fileID: 3117108878704605615}
+  - component: {fileID: 7488983744572566778}
   m_Layer: 0
   m_Name: FiveJars
   m_TagString: Untagged
@@ -83,8 +84,8 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 510124843
+  m_SortingLayer: 6
   m_SortingOrder: 1
   m_MaskInteraction: 0
   m_Sprite: {fileID: -1710428125, guid: 188a5a336dcf1cd41b13ac2f964fb528, type: 3}
@@ -243,4 +244,21 @@ MonoBehaviour:
   onDeath:
     m_PersistentCalls:
       m_Calls: []
-  dropPrefab: {fileID: 0}
+  dropPrefab: {fileID: 1235195508731939575, guid: c4d56a70d3c0a734dbd75f13076fa6c3, type: 3}
+--- !u!114 &7488983744572566778
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8678913954229393024}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bfc4c2d5ebdfd941ba83015ec63ff8c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GizmosReference
+  shape: 1
+  color: {r: 1, g: 0.5647059, b: 0, a: 1}
+  drawGizmo: 1
+  gizmoSize: 0.3
+  rectangleSize: {x: 1, y: 1}

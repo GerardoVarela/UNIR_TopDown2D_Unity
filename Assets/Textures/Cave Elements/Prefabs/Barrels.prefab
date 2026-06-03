@@ -107,6 +107,7 @@ GameObject:
   - component: {fileID: 2769822172639211847}
   - component: {fileID: 3561221265053290165}
   - component: {fileID: 8345234134485536270}
+  - component: {fileID: 3615588001731534352}
   m_Layer: 0
   m_Name: Barrels
   m_TagString: Untagged
@@ -338,6 +339,24 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   dropPrefab: {fileID: 1848119532410950533, guid: ead132fec0f504f479719440f85ffbbe, type: 3}
+--- !u!114 &3615588001731534352
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3272091018327925980}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bfc4c2d5ebdfd941ba83015ec63ff8c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GizmosReference
+  shape: 1
+  color: {r: 1, g: 0.5647059, b: 0, a: 1}
+  drawGizmo: 1
+  gizmoSize: 0.41
+  gizmoOffset: {x: 0.01, y: 0.07}
+  rectangleSize: {x: 1, y: 1}
 --- !u!1 &6981768290578769997
 GameObject:
   m_ObjectHideFlags: 0

@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 3677453071091742050}
   - component: {fileID: 4639409426047559566}
   - component: {fileID: 2545990805887692939}
+  - component: {fileID: 2767632906480447066}
   m_Layer: 0
   m_Name: CloseCutting_Horizontal
   m_TagString: Untagged
@@ -174,3 +175,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20e5da5154ce8a747a1c02f51fb31af1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CloseCutting
+--- !u!114 &2767632906480447066
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7415977590774675190}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bfc4c2d5ebdfd941ba83015ec63ff8c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GizmosReference
+  shape: 2
+  color: {r: 1, g: 0, b: 0, a: 1}
+  drawGizmo: 1
+  gizmoSize: 1
+  rectangleSize: {x: 0.64, y: 0.18}

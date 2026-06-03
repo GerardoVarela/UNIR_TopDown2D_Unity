@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 1581030880761277355}
   - component: {fileID: 6181331357534839949}
   - component: {fileID: 1054903859123685556}
+  - component: {fileID: 540715510167133084}
   m_Layer: 0
   m_Name: TrapTrigger
   m_TagString: Untagged
@@ -166,3 +167,21 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.32, y: 0.32}
   m_EdgeRadius: 0
+--- !u!114 &540715510167133084
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1177915533081083751}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bfc4c2d5ebdfd941ba83015ec63ff8c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GizmosReference
+  shape: 0
+  color: {r: 1, g: 0, b: 0, a: 1}
+  drawGizmo: 1
+  gizmoSize: 0.34
+  gizmoOffset: {x: 0, y: 0}
+  rectangleSize: {x: 1, y: 1}
